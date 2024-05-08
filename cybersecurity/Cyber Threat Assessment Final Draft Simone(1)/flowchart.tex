@@ -1,0 +1,36 @@
+\definecolor{adaee4ed-88c8-5b21-a9e7-31316ebef86f}{RGB}{255, 179, 178}
+\definecolor{f3551e38-74df-57e2-b793-83d7fe876c85}{RGB}{0, 0, 0}
+\definecolor{0b71a967-1f15-55a5-9bb9-70efa7b4fc58}{RGB}{51, 51, 51}
+\definecolor{70af333d-4869-5f2a-97ca-9904a9fce6c3}{RGB}{179, 254, 174}
+\definecolor{747aec21-333b-59ee-84e3-ddff893e5ccd}{RGB}{255, 216, 176}
+\definecolor{5856d031-3da1-575c-834e-c77e9e438c62}{RGB}{162, 177, 195}
+
+\tikzstyle{512bdd77-c3aa-5669-a956-85f7a90c6fb4} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm, text centered, font=\normalsize, color=0b71a967-1f15-55a5-9bb9-70efa7b4fc58, draw=f3551e38-74df-57e2-b793-83d7fe876c85, line width=1, fill=adaee4ed-88c8-5b21-a9e7-31316ebef86f]
+\tikzstyle{b0e005f8-e267-5a3a-a638-881fb9faed1d} = [diamond, minimum width=3cm, minimum height=2cm, text centered, font=\normalsize, color=0b71a967-1f15-55a5-9bb9-70efa7b4fc58, draw=f3551e38-74df-57e2-b793-83d7fe876c85, line width=1, fill=70af333d-4869-5f2a-97ca-9904a9fce6c3]
+\tikzstyle{69bbb168-da59-5865-902f-94e77902bf95} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, font=\normalsize, color=0b71a967-1f15-55a5-9bb9-70efa7b4fc58, draw=f3551e38-74df-57e2-b793-83d7fe876c85, line width=1, fill=747aec21-333b-59ee-84e3-ddff893e5ccd]
+\tikzstyle{7be24b85-97d0-5b76-ba9e-d94005dca8f2} = [thick, draw=5856d031-3da1-575c-834e-c77e9e438c62, line width=2, ->, >=stealth]
+\begin{figure}[hb]
+
+\begin{tikzpicture}[node distance=3cm]
+\node (a57c6caf-49dc-4cb6-af62-3cb6fbbe7cad) [512bdd77-c3aa-5669-a956-85f7a90c6fb4] {Gain Access};
+\node (0f84e2ea-2de9-4ad6-8522-ff9b9b25b531) [b0e005f8-e267-5a3a-a638-881fb9faed1d, below of=a57c6caf-49dc-4cb6-af62-3cb6fbbe7cad, yshift=-0.5cm] {Physical};
+\node (84367632-e919-4a42-8ee6-fb2f30eb2d0c) [b0e005f8-e267-5a3a-a638-881fb9faed1d, right of=0f84e2ea-2de9-4ad6-8522-ff9b9b25b531, xshift=2cm] {Digital};
+\node (bcc7fbfc-ce8e-4f39-902d-d726538068ff) [b0e005f8-e267-5a3a-a638-881fb9faed1d, below of=0f84e2ea-2de9-4ad6-8522-ff9b9b25b531, yshift=-0.5cm] {Get Data};
+\node (6a5989e1-b4e0-4ed0-8358-6a51e94fb842) [b0e005f8-e267-5a3a-a638-881fb9faed1d, right of=bcc7fbfc-ce8e-4f39-902d-d726538068ff, xshift=2cm] {Cover Tracks};
+\node (b652866e-da41-4fed-a7b5-ff3e3c6380ed) [b0e005f8-e267-5a3a-a638-881fb9faed1d, left of=bcc7fbfc-ce8e-4f39-902d-d726538068ff, xshift=-2cm] {Ransom, Sale};
+\node (e57a207e-b96f-48db-89c4-8358910a4fc9) [69bbb168-da59-5865-902f-94e77902bf95, below of=bcc7fbfc-ce8e-4f39-902d-d726538068ff, yshift=-0.5cm] {Exfiltrate Data};
+\node (3a16c4fd-7489-44c6-b09d-6b1c7084eada) [69bbb168-da59-5865-902f-94e77902bf95, below of=e57a207e-b96f-48db-89c4-8358910a4fc9] {Money};
+\draw [7be24b85-97d0-5b76-ba9e-d94005dca8f2] (0f84e2ea-2de9-4ad6-8522-ff9b9b25b531) --  (bcc7fbfc-ce8e-4f39-902d-d726538068ff);
+\draw [7be24b85-97d0-5b76-ba9e-d94005dca8f2] (84367632-e919-4a42-8ee6-fb2f30eb2d0c) --  (bcc7fbfc-ce8e-4f39-902d-d726538068ff);
+\draw [7be24b85-97d0-5b76-ba9e-d94005dca8f2] (bcc7fbfc-ce8e-4f39-902d-d726538068ff) --  (b652866e-da41-4fed-a7b5-ff3e3c6380ed);
+\draw [7be24b85-97d0-5b76-ba9e-d94005dca8f2] (b652866e-da41-4fed-a7b5-ff3e3c6380ed) --  (3a16c4fd-7489-44c6-b09d-6b1c7084eada);
+\draw [7be24b85-97d0-5b76-ba9e-d94005dca8f2] (bcc7fbfc-ce8e-4f39-902d-d726538068ff) --  (e57a207e-b96f-48db-89c4-8358910a4fc9);
+\draw [7be24b85-97d0-5b76-ba9e-d94005dca8f2] (e57a207e-b96f-48db-89c4-8358910a4fc9) --  (6a5989e1-b4e0-4ed0-8358-6a51e94fb842);
+\draw [7be24b85-97d0-5b76-ba9e-d94005dca8f2] (6a5989e1-b4e0-4ed0-8358-6a51e94fb842) --  (bcc7fbfc-ce8e-4f39-902d-d726538068ff);
+\draw [7be24b85-97d0-5b76-ba9e-d94005dca8f2] (a57c6caf-49dc-4cb6-af62-3cb6fbbe7cad) --  (0f84e2ea-2de9-4ad6-8522-ff9b9b25b531);
+\draw [7be24b85-97d0-5b76-ba9e-d94005dca8f2] (a57c6caf-49dc-4cb6-af62-3cb6fbbe7cad) --  (84367632-e919-4a42-8ee6-fb2f30eb2d0c);
+
+\end{tikzpicture}
+\caption[Sample Flowchart]{A flowchart of attacker decisions\protect\footnotemark.}
+\end{figure}
+\footnotetext{This model does not show specific means of attack, nor include end outcomes like sabotage or defamation. Attackers choose one or more means of ingress, such as an SQL injection or phishing or bogus password reset, get the data that Inchcape needs for work and that governments and black market buyers want, and try to get out without getting caught by defenders.}

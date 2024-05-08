@@ -1,0 +1,72 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{geometry}[margin=1in]
+\usepackage{ragged2e}
+\usepackage{titling}
+\usepackage{setspace}
+\usepackage[utf8]{inputenc}
+\usepackage[hidelinks]{hyperref}
+\usepackage{csquotes}
+\MakeOuterQuote{"}
+\usepackage{xpatch}
+%\usepackage{biblatex-mla}
+\usepackage[american]{babel}
+\usepackage[style=mla,noremoteinfo=true,url=false,hyperref=true,backref=true]{biblatex}
+\usepackage{blindtext}
+\DeclareAutoCiteCommand{footnote}[f]{\footcite}{\footcites}
+\setlength{\bibhang}{1.5em}
+\makeatletter
+\DeclareCiteCommand{\fullcitefoot}
+  {\renewcommand{\finalnamedelim}
+   {\ifnum\value{liststop}>2 \finalandcomma\fi\addspace\&\space}%
+   \list{}
+   {\setlength{\leftmargin}{\bibhang}%
+     \setlength{\itemindent}{-\leftmargin}%
+     \setlength{\itemsep}{\bibitemsep}%
+     \setlength{\parsep}{\bibparsep}}\item}
+  {\usedriver
+    {\DeclareNameAlias{sortname}{default}}
+    {\thefield{entrytype}}\finentry}
+  {\item}
+  {\endlist\global\undef\bbx@lasthash}
+
+\DeclareCiteCommand{\fullcitebib}
+  {\renewcommand{\finalnamedelim}
+   {\ifnum\value{liststop}>2 \finalandcomma\fi\addspace\&\space}%
+   \list{}
+   {\setlength{\leftmargin}{\bibhang}%
+     \setlength{\itemindent}{-\leftmargin}%
+     \setlength{\itemsep}{\bibitemsep}%
+     \setlength{\parsep}{\bibparsep}}\item}
+  {\usedriver
+    {}
+    {\thefield{entrytype}}\finentry}
+  {\item}
+  {\endlist\global\undef\bbx@lasthash}
+\makeatother
+% reference: https://tex.stackexchange.com/q/48400/133968
+\newbibmacro{string+url}[1]{%
+    \iffieldundef{url}{#1}{\href{\thefield{url}}{#1}}}
+\DeclareFieldFormat[online]{title}{\usebibmacro{string+url}{\mkbibemph{#1}}}
+\DeclareFieldFormat[online]{url}{}
+\addbibresource{law.bib}
+\doublespacing
+\title{Optional Extra Credit Assignment: Admiralty vs. Maritime }
+\author{Joey Simone}
+\date{Admiralty Law -- \today}
+
+\pagestyle{empty}
+\begin{document}
+
+\begin{flushleft}
+\thetitle
+
+\thedate
+
+\theauthor
+\end{flushleft}
+The real definition of the difference between Admiralty Law and Maritime Law is given by Davies as "Technically, admiralty law is the body of rules that define the scope of the court’s admiralty jurisdiction. Maritime law is the substantive law applied by a court exercising admiralty jurisdiction." \autocite*[484]{davies_teaching_2011}. My work is to expand upon that pair of sentences and render them in a way, if not palatable to the layman or landsman, then at least to the seaman.
+\nocite{davies_teaching_2011}
+\nocite{schoenbaum_admiralty_2019}
+\printbibliography
+\end{document}

@@ -1,0 +1,102 @@
+\documentclass[letterpaper,12pt]{article}
+\usepackage[hidelinks]{hyperref}
+\usepackage[margin=1in]{geometry}
+\usepackage[super]{nth}
+\usepackage[utf8x]{inputenc}
+\usepackage{xpatch}
+\usepackage[backend=biber, style=apa]{biblatex}
+\usepackage{amsmath}
+\usepackage{graphicx} % Required for inserting images
+\addbibresource{Sight Procedures.bib}
+
+\title{Celestial Project Advice}
+\author{Joey Simone}
+\date{April 2024}
+
+\begin{document}
+
+\maketitle
+\section{Introduction}
+\subsection{Ground Rules}
+If you are reading this, you are (probably) a CMA deckie on senior cruise or about to go. You're probably worried about completing the celestial project, and you may even have your eyes on the competition prize. To get you ready, you should know what you're biting into. I won the big prize in 2023, and I learned a lot of tricks for improving my rhythm and efficiency while taking my sights.
+
+For the project itself, the self directed work is as follows:
+
+
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{|c|c|c|}
+    \hline
+        Required Fixes & Required Azimuths & Single Lines of Position\\
+        \hline
+        Morning 3 Star Fix x2 & Azimuth of the Sun x3\footnotemark{} & Lat by LAN\\
+        Evening 3 Star Fix x2 & Azimuth of Polaris & Lat by Polaris \\
+        3 Sun Fix x3 & Azimuth of something other than Sun or Polaris & \\
+        \hline
+    \end{tabular}
+    \caption{Required Submissions for Independent Work}
+    \label{tab:solo}
+\end{table}
+For extra credit, there are 5(7) ways to get points.
+\begin{enumerate}
+    \item Finish the project early. \begin{enumerate}
+        \item \nth{1} to finish gets 10 points
+        \item \nth{2} to finish gets 5 points
+        \item \nth{3} to finish gets 3 points
+    \end{enumerate}
+    \item Extra Credit AM or PM 3 Star fix worth 4 points
+    \item Extra Credit Sun Sun Sun running fix worth 3 points
+    \item Great Circle or Mercator Sailing from one Ship Position to Another Ship Position worth 2 points
+    \item Extra Credit Azimuth or Amplitude of Any Body worth 1 point
+\end{enumerate}
+
+\footnotetext{One of these azimuths has to be an Amplitude, an Azimuth at Sunrise}
+For the Extra Credit Submissions outlines above, you are only permitted to submit 2 per day. In previous years, contestants who shot morning noon and night would get 11 points per day, but someone could beat them by submitting a Mercator sailing for the CMG and SMG between every hourly GPS fix from the CWO log and submit 48 points per day, which was deeply unfair. Now, only 4 points per day can be earned without a sextant, 2 sailings, and 8 points can be earned per day from fixes. I personally did 7 points per day with one 3 star and one Sun-Sun-Sun fix per day, and comfortably beat the runner up by 50 points.
+
+The instructors are strict on formatting. \begin{itemize}
+    \item Include the date of all submissions and the UT and LT time of each LOP
+    \item Include the reference for your starting DR position, CSE, and SPD\footnotemark
+\end{itemize}
+\footnotetext{The best source of Starting \texttt{LAT, LON, CSE, SPD} is \begin{enumerate}
+    \item The most recent Position Slip posted in the O4 Nav Lab, because he can check these.
+    \item A celestially reckoned position you obtained from previous work (useful for attempting a complete day submission)
+    \item The Instantaneous position from the GPS in the Nav Lab. He can't check these for accuracy.
+\end{enumerate}}
+\newpage
+\subsection{Language and Equations}
+For this guide to make sense (and for you to be on this cruise), you had to pass Celestial Navigation class, so I will use the language with which I feel most comfortable. However, there are some distinctions between what I say and what you may have learned or what Pearson says. When I say Universal Time, that's Greenwich Mean Time; UT and GMT respectively. The modern Nautical Almanac gives all times in UT not GMT. I may say Ship Time or Local Time to mean Zone Time. Zone Time is respective only to geographic meridians; not to the ship, daylight savings time, or political boundaries. If you calculate the Zone Time of Begin Morning Nautical Twilight, you may not wake up at the right time because the time zone being observed on the ship is not always the time zone that your longitude indicates, so I say Local Time (LT). The formatting in the projects on the board in the Nav Lab use \texttt{Advance/Retard} but I write \texttt{Run} with a positive (+) run indicating that the ship has moved forward between the sight time and the desired fix time, or a negative (-) run indicates that the sight was taken after the desired fix time. I always move all of my lines to a convenient hour. Daytime running fixes should always yield a 1200 position, but since the twilight move around so much, I can't give a hard and fast rule that the AM fix is always at 0600 or something.
+
+\begin{align}
+    &\text{Hc}=\sin^{-1}{\cos{\text{L}}\cos{\text{d}}\cos{\text{LHA}}+\sin{\text{L}}\sin{\text{d}}}  &\text{\texttt{Height Computed}}\\
+    &\text{Z}=\tan^{-1}{\frac{\sin{\text{LHA}}}{\cos{\text{Lat}\tan\text{{d}}-\sin{\text{L}}\cos{\text{LHA}}}}}   &\text{\texttt{Azimuth Angle}}\\
+    &\text{MOO Corr}=\text{Run}\times\cos{(\text{Zn}-\text{CSE})}  &\text{\texttt{Motion of Observer}}\\
+    &\text{MOB Corr}=15.04\min\times\cos{(\text{L})}\sin{(\text{Zn})}   &\text{\texttt{Motion of Body}}
+    &\text{A}=\sin^{-1}
+\end{align}
+\section{Scheduling}
+\subsection{Sight Planning}
+A not inconsiderable part of your celestial Routine will consist of creating sight plans for you and your fellow cadets. Live and die by these. Don't shoot a body that's not on your sight plan and identify it afterwards. Use the sight plan to set your alarm in the morning, remember to take your breaks during the day to take your sun lines at the optimal time, and stay awake long enough in the evening to make the morning sight plan and communicate it to your peers. Half a dozen otherwise competent and intelligent men I know failed their senior cruise in 2023 because they did not. You may find my detailed instructions for sight planning \hyperlink{https://www.csum.edu/tutoring/media/celnavjoey.pdf}{\textbf{HERE}}.
+\subsection{Your Routine}
+There are a few celestial events that happen each day, and if you want to finish the project quickly or stack up extra credit, you can try to observe as many of them as you can. Of course, no time numbers here because the times of these events is the definition of Ephemeris. You are a senior, which grants you some right and liberties, but unfortunately you are a senior, which requires some duties. Observe which of these you can. If you have day work you're allowed to take a break to whip out the sextant and take observations. If you're on watch, you are required to take observations, don't forget to take a picture with your phone to give to submit to the teacher or to copy your work for later. If you're in the classroom or the simulator or practical training, the breaks might not line up with when star stuff is happening. You will have many days to catch all of it, especially on the long Pacific passage.
+\begin{enumerate}
+\item During True Night Time, only azimuths are possible.
+    \item \texttt{Begin Morning Nautical Twilight. AM Star Time Begins. Take a fix using 3 different stars for lines of position.} If one of them is Polaris, then this submission checks off your requirement for a Polaris LOP.
+    \item \texttt{Begin Morning Civil Twilight. AM Star Time Ends, only planets remain visible after this time.} Stars get harder to see, but the horizon becomes easier to sight.
+    \item \texttt{Sunrise.} At such a low altitude, it is important to take the barometer and temperature corrections for the sun if you choose to sight it, and you can even get an LOP without a sextant by marking the time that the upper limb breaches the horizon or that the lower limb stops touching the water. Enter \(\text{Hs}=0, \text{IC}=0\). Within a few minutes of Sunrise, the center of the Sun will be at the Celestial Equator, or about 1 Sun above the horizon. Use the Gunsight of the Azimuth Circle to take an Amplitude of the Sun.
+    \item Daytime. Use the Mirror of the Azimuth Circle to take an Az Sun at any time. The procedure for bridge azimuths will be expanded on in Subsection \ref{doubleget}. Before LAN\footnote{an amount of time you can estimate with the rules in my Sight Planning Guide} take an altitude of the Sun for a single LOP, record the information for later, save the calculation until after the PM sun line.
+    \item \texttt{LAN.} I warn you now about Daylight Savings Time. On my freshman cruise I stepped out on the deck a whole hour early because I forgot about DST. We were not observing zone time, we were observing ship time, and the sun kept getting higher and higher until it stopped at 1300 on the dot. Sun Sun Sun fixes are not counted unless they include a Lat by LAN, but this can be substituted with an Ex-Meridian.
+    \item In the Afternoon, you can do the same thing as the morning and take a mirror azimuth or a Sun LOP. Maybe you'll get lucky and shoot the moon during the day to have a 4th LOP.
+    \item \texttt{Sunset. Observe amplitude. Planets Available.}
+    \item \texttt{End Evening Civil Twilight. Star time begins. Observe 3 star fix.}
+    \item \texttt{End Evening Nautical Twilight. Star time ends when the ocean is too dark to see in the sextant.} 
+    \item \texttt{Night Time, azimuths only.}
+\end{enumerate}
+\section{Taking Sights}
+\section{Sight Reduction}
+\subsection{Azimuth}
+\subsection{Fix}
+\subsection{Bridge Watch}
+\subsubsection{Azimuth} \label{doubleget}
+\subsubsection{Fix}
+\printbibliography
+\end{document}
