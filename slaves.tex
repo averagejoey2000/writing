@@ -1,4 +1,10 @@
 \documentclass[12pt,letterpaper,draft]{memoir}
+\usepackage[utf8x]{inputenc}
+\usepackage[english]{babel}
+\usepackage{xpatch}
+\usepackage{csquotes}
+\usepackage[style=authortitlem backend=biber]{biblatex}
+\addbibresource{dune.bib}
 \usepackage{memhfixc}
 \usepackage[hidelinks]{hyperref}
 \usepackage[margin=1in]{geometry}
@@ -35,4 +41,6 @@ Feyd-Rautha met the gloating stare in his uncle’s eyes. \textit{And I must rem
 “I know you, Feyd,” the Baron said. “You will not refuse.”\\
 \textit{All right}, Feyd-Rautha thought. \textit{I need you now. I see that. The bargain’s made. But I’ll not always need you. And\ldots someday \ldots} 
 \fancybreak{* * *}
+\fancybreak{* * *}
+\printbibliography
 \end{document}
