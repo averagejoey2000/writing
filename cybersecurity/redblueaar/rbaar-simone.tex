@@ -1,0 +1,18 @@
+\documentclass{article}[letterpaper,12pt]
+\usepackage[T1]{fontenc}
+\usepackage{charter}
+\usepackage{hyperref}
+\usepackage{geometry}[margin=1in]
+\author{Joey Simone}
+\title{Red Team Blue Team After-Action Report}
+\usepackage{setspace}
+\begin{document}
+\doublespace
+\maketitle
+Q1. When we were first assigning points, we used our knowledge as a deckie and an engineer respectively to determine the most critical parts of the ship to shield. What systems have backups, analog controls, or which coudnl't damage the ship or operations with digital control alone were sacrificed. You can lose the GPS if you have a sextant and a RADAR. The bilge level control being hacked is not a problem because the overboard discharge is physically padlocked, so an ecoterrorist wouldn't be able to cause an oil spill without sneaking aboard. The systems with no backups and that were the most critical received the most points, and I drew on my previous cybersecurity experience to recommend assigning points to security monitoring and event logging systems. Having good telemetry makes responding to an attack much more feasible. The last consideration was to secure the intersections with the outside world, by two different considerations. Any place that crew member devices connect to internal systems is a weak and permeable point so effort must be allocated to increasing security and suspicion in those places, and the ship's external business communication may be a vector for infection. Once we got the follow up and found that it was a social media based attack, with possible social engineering, phish, and lateral motion to people with privilege, we stacked a lot of poitns on access points and commanded humans to shape up their cybersecurity practices, sent a phsihing flyer, and required password resets. We know how ships work, we know how attacks move, we know how people are compromised, so we filled those gaps as best we could.
+
+
+Q2. particularly considering our own attackers, our recommendation is to take special care at the intersections of humans with the machines. An antivirus software can detect suspicious files and behaviors, but even a very discerning human an have lapses of vigilance, and can be weak to coercive tactics. A phishing email can be very poorly written, but if it threatens to leak embarrassing sexual images, a human can be overcome by shame and click the link anyway. Email security is one thing, but social media as a vector for attack has a lot of potential. Social media phishing plus blackmail may even circumvent the need to override engineering controls, like compelling a deckhand to remove the aforementioned padlock on the overboard discharge. Liss and Schmid intercepted our emails, including the captain's . A company seeking a maximum paranoia solution may seek to implement \href{https://www.openpgp.org/}{the OpenPGP standard} in their email security. I am proud that we did minimize the damage of the attack and contained the spread imediately.  
+
+Expanding the discussion to include the other simulated attack pairs: The most common point of failure indicated was the interface with the real world. One ship was compromised by allowing a bribed port worker to sabotage the ship by planting a USB drive, humans were compromised by the fear that something was wrong with the ship, and in the devastating Boland/Reyes attack, personal emails were accessed, allowing for disinformation and blackmail campaigns. The most common damage incurred was financial, maybe marine operators should consider purchasing cyberattack insurance to pay for delays, investigations, repairs, ransoms, and reputation loss. 
+\end{document}

@@ -1,0 +1,61 @@
+\usepackage{tikz}
+\usepackage{xparse}
+
+\newcounter{chatlinenum}
+
+%% Adjust text width to suit
+\tikzset{chatstyle/.style={text width=1.5in,rounded corners=2pt}}
+
+%% Adjust width of minipage to suit, but greater than TikZ text width
+\NewDocumentEnvironment{chat}{}{%
+   \setcounter{chatlinenum}{0}
+   \begin{minipage}{3.0in}
+       \everypar={\chatline}
+}{%
+   \end{minipage}
+}
+
+\definecolor{mygreen}{HTML}{88EABB}
+
+%% Alter colors to suit
+\def\chatline#1\par{%
+   \stepcounter{chatlinenum}%
+   \noindent
+   \ifodd\thechatlinenum
+       \tikz[]{\node[fill=lightgray,chatstyle]{\strut#1\strut};}%
+   \else
+       \hfill
+       \tikz[]{\node[fill=mygreen,chatstyle,align=right]{\strut#1\unskip\strut};}%
+   \fi
+   \par
+   \smallskip
+}
+
+%% |=====8><-----| %% New solution:
+
+%% Alter colors to suit
+\begingroup
+    \lccode`~=`\^^M
+    \lowercase{%
+\endgroup
+    \def\newchatline#1~{%
+        \stepcounter{chatlinenum}%
+        \ifodd\thechatlinenum
+            \tikz[]{\node[fill=lightgray,chatstyle]{\strut#1\strut};}%
+        \else
+            \hfill
+            \tikz[]{\node[fill=mygreen,chatstyle,align=right]{\strut#1\strut};}%
+        \fi
+        ~
+        \smallskip
+    }%
+}
+
+\NewDocumentEnvironment{newchat}{}{%
+    \setcounter{chatlinenum}{0}
+    \begin{minipage}{3.0in}
+        \obeylines
+        \everypar={\newchatline}
+}{%
+    \end{minipage}
+}

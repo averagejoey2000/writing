@@ -1,0 +1,2689 @@
+<!DOCTYPE html>
+<html><head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="Content-Security-Policy" content="script-src 'none'; media-src 'none'">
+		<title>Zotero Report</title>
+		<link rel="stylesheet" type="text/css" href="data:text/css;base64,Ym9keSB7CgliYWNrZ3JvdW5kOiB3aGl0ZTsKfQoKYSB7Cgl0ZXh0LWRlY29yYXRpb246IHVuZGVybGluZTsKfQoKYm9keSB7CglwYWRkaW5nOiAwOwp9Cgp1bC5yZXBvcnQgbGkuaXRlbSB7Cglib3JkZXItdG9wOiA0cHggc29saWQgIzU1NTsKCXBhZGRpbmctdG9wOiAxZW07CglwYWRkaW5nLWxlZnQ6IDFlbTsKCXBhZGRpbmctcmlnaHQ6IDFlbTsKCW1hcmdpbi1ib3R0b206IDJlbTsKfQoKaDEsIGgyLCBoMywgaDQsIGg1LCBoNiB7Cglmb250LXdlaWdodDogbm9ybWFsOwp9CgpoMiB7CgltYXJnaW46IDAgMCAuNWVtOwp9CgpoMi5wYXJlbnRJdGVtIHsKCWZvbnQtd2VpZ2h0OiBib2xkOwoJZm9udC1zaXplOiAxZW07CglwYWRkaW5nOiAwIDAgLjVlbTsKCWJvcmRlci1ib3R0b206IDFweCBzb2xpZCAjY2NjOwp9CgovKiBJZiBjb21iaW5pbmcgY2hpbGRyZW4sIGRpc3BsYXkgcGFyZW50IHNsaWdodGx5IGxhcmdlciAqLwp1bC5yZXBvcnQuY29tYmluZUNoaWxkSXRlbXMgaDIucGFyZW50SXRlbSB7Cglmb250LXNpemU6IDEuMWVtOwoJcGFkZGluZy1ib3R0b206IC43NWVtOwoJbWFyZ2luLWJvdHRvbTogLjRlbTsKfQoKaDIucGFyZW50SXRlbSAudGl0bGUgewoJZm9udC13ZWlnaHQ6IG5vcm1hbDsKfQoKaDMgewoJbWFyZ2luLWJvdHRvbTogLjZlbTsKCWZvbnQtd2VpZ2h0OiBib2xkICFpbXBvcnRhbnQ7Cglmb250LXNpemU6IDFlbTsKCWRpc3BsYXk6IGJsb2NrOwp9CgovKiBNZXRhZGF0YSB0YWJsZSAqLwp0aCB7Cgl2ZXJ0aWNhbC1hbGlnbjogdG9wOwoJdGV4dC1hbGlnbjogcmlnaHQ7Cgl3aWR0aDogMTUlOwoJd2hpdGUtc3BhY2U6IG5vd3JhcDsKfQoKdGQgewoJcGFkZGluZy1sZWZ0OiAuNWVtOwp9CgoKdWwucmVwb3J0LCB1bC5ub3RlcywgdWwudGFncyB7CglsaXN0LXN0eWxlOiBub25lOwoJbWFyZ2luLWxlZnQ6IDA7CglwYWRkaW5nLWxlZnQ6IDA7Cn0KCi8qIFRhZ3MgKi8KaDMudGFncyB7Cglmb250LXNpemU6IDEuMWVtOwp9Cgp1bC50YWdzIHsKCWxpbmUtaGVpZ2h0OiAxLjc1ZW07CglsaXN0LXN0eWxlOiBub25lOwp9Cgp1bC50YWdzIGxpIHsKCWRpc3BsYXk6IGlubGluZTsKfQoKdWwudGFncyBsaTpub3QoOmxhc3QtY2hpbGQpOmFmdGVyIHsKCWNvbnRlbnQ6ICcsICc7Cn0KCgovKiBDaGlsZCBub3RlcyAqLwpoMy5ub3RlcyB7Cglmb250LXNpemU6IDEuMWVtOwp9Cgp1bC5ub3RlcyB7CgltYXJnaW4tYm90dG9tOiAxLjJlbTsKfQoKdWwubm90ZXMgPiBsaTpmaXJzdC1jaGlsZCBwIHsKCW1hcmdpbi10b3A6IDA7Cn0KCnVsLm5vdGVzID4gbGkgewoJcGFkZGluZzogLjdlbSAwOwp9Cgp1bC5ub3RlcyA+IGxpOm5vdCg6bGFzdC1jaGlsZCkgewoJYm9yZGVyLWJvdHRvbTogMXB4ICNjY2Mgc29saWQ7Cn0KCgp1bC5ub3RlcyA+IGxpIHA6Zmlyc3QtY2hpbGQgewoJbWFyZ2luLXRvcDogMDsKfQoKdWwubm90ZXMgPiBsaSBwOmxhc3QtY2hpbGQgewoJbWFyZ2luLWJvdHRvbTogMDsKfQoKLyogQWRkIHF1b3RhdGlvbiBtYXJrcyBhcm91bmQgYmxvY2txdW90ZSAqLwp1bC5ub3RlcyA+IGxpIGJsb2NrcXVvdGUgcDpub3QoOmVtcHR5KTpiZWZvcmUsCmxpLm5vdGUgYmxvY2txdW90ZSBwOm5vdCg6ZW1wdHkpOmJlZm9yZSB7Cgljb250ZW50OiAn4oCcJzsKfQoKdWwubm90ZXMgPiBsaSBibG9ja3F1b3RlIHA6bm90KDplbXB0eSk6bGFzdC1jaGlsZDphZnRlciwKbGkubm90ZSBibG9ja3F1b3RlIHA6bm90KDplbXB0eSk6bGFzdC1jaGlsZDphZnRlciB7Cgljb250ZW50OiAn4oCdJzsKfQoKLyogUHJlc2VydmUgd2hpdGVzcGFjZSBvbiBwbGFpbnRleHQgbm90ZXMgKi8KdWwubm90ZXMgbGkgcC5wbGFpbnRleHQsIGxpLm5vdGUgcC5wbGFpbnRleHQsIGRpdi5ub3RlIHAucGxhaW50ZXh0IHsKCXdoaXRlLXNwYWNlOiBwcmUtd3JhcDsKfQoKLyogRGlzcGxheSB0YWdzIHdpdGhpbiBjaGlsZCBub3RlcyBpbmxpbmUgKi8KdWwubm90ZXMgaDMudGFncyB7CglkaXNwbGF5OiBpbmxpbmU7Cglmb250LXNpemU6IDFlbTsKfQoKdWwubm90ZXMgaDMudGFnczphZnRlciB7Cgljb250ZW50OiAnICc7Cn0KCnVsLm5vdGVzIHVsLnRhZ3MgewoJZGlzcGxheTogaW5saW5lOwp9Cgp1bC5ub3RlcyB1bC50YWdzIGxpOm5vdCg6bGFzdC1jaGlsZCk6YWZ0ZXIgewoJY29udGVudDogJywgJzsKfQoKCi8qIENoaWxkIGF0dGFjaG1lbnRzICovCmgzLmF0dGFjaG1lbnRzIHsKCWZvbnQtc2l6ZTogMS4xZW07Cn0KCnVsLmF0dGFjaG1lbnRzIGxpIHsKCXBhZGRpbmctdG9wOiAuNWVtOwp9Cgp1bC5hdHRhY2htZW50cyBkaXYubm90ZSB7CgltYXJnaW4tbGVmdDogMmVtOwp9Cgp1bC5hdHRhY2htZW50cyBkaXYubm90ZSBwOmZpcnN0LWNoaWxkIHsKCW1hcmdpbi10b3A6IC43NWVtOwp9CgpkaXYgdGFibGUgewoJYm9yZGVyLWNvbGxhcHNlOiBjb2xsYXBzZTsKfQoKZGl2IHRhYmxlIHRkLCBkaXYgdGFibGUgdGggewoJYm9yZGVyOiAxcHggI2NjYyBzb2xpZDsKCWJvcmRlci1jb2xsYXBzZTogY29sbGFwc2U7Cgl3b3JkLWJyZWFrOiBicmVhay1hbGw7Cn0KCmRpdiB0YWJsZSB0ZCBwOmVtcHR5OjphZnRlciwgZGl2IHRhYmxlIHRoIHA6ZW1wdHk6OmFmdGVyIHsKCWNvbnRlbnQ6ICJcMDBhMCI7Cn0KCmRpdiB0YWJsZSB0ZCAqOmZpcnN0LWNoaWxkLCBkaXYgdGFibGUgdGggKjpmaXJzdC1jaGlsZCB7CgltYXJnaW4tdG9wOiAwOwp9CgpkaXYgdGFibGUgdGQgKjpsYXN0LWNoaWxkLCBkaXYgdGFibGUgdGggKjpsYXN0LWNoaWxkIHsKCW1hcmdpbi1ib3R0b206IDA7Cn0K">
+		<link rel="stylesheet" type="text/css" media="screen,projection" href="data:text/css;base64,LyogR2VuZXJpYyBzdHlsZXMgKi8KYm9keSB7Cglmb250OiA2Mi41JSBHZW9yZ2lhLCBUaW1lcywgc2VyaWY7Cgl3aWR0aDogNzgwcHg7CgltYXJnaW46IDAgYXV0bzsKfQoKaDIgewoJZm9udC1zaXplOiAxLjVlbTsKCWxpbmUtaGVpZ2h0OiAxLjVlbTsKCWZvbnQtZmFtaWx5OiBHZW9yZ2lhLCBUaW1lcywgc2VyaWY7Cn0KCnAgewoJbGluZS1oZWlnaHQ6IDEuNWVtOwp9CgphOmxpbmssIGE6dmlzaXRlZCB7Cgljb2xvcjogIzkwMDsKfQoKYTpob3ZlciwgYTphY3RpdmUgewoJY29sb3I6ICM3Nzc7Cn0KCgp1bC5yZXBvcnQgewoJZm9udC1zaXplOiAxLjRlbTsKCXdpZHRoOiA2ODBweDsKCW1hcmdpbjogMCBhdXRvOwoJcGFkZGluZzogMjBweCAyMHB4Owp9CgovKiBNZXRhZGF0YSB0YWJsZSAqLwp0YWJsZSB7Cglib3JkZXI6IDFweCAjY2NjIHNvbGlkOwoJb3ZlcmZsb3c6IGF1dG87Cgl3aWR0aDogMTAwJTsKCW1hcmdpbjogLjFlbSBhdXRvIC43NWVtOwoJcGFkZGluZzogMC41ZW07Cn0K">
+		<link rel="stylesheet" type="text/css" media="print" href="data:text/css;base64,Ym9keSB7Cglmb250OiAxMnB0ICJUaW1lcyBOZXcgUm9tYW4iLCBUaW1lcywgR2VvcmdpYSwgc2VyaWY7CgltYXJnaW46IDA7Cgl3aWR0aDogYXV0bzsKCWNvbG9yOiBibGFjazsKfQoKLyogUGFnZSBCcmVha3MgKHBhZ2UtYnJlYWstaW5zaWRlIG9ubHkgcmVjb2duaXplZCBieSBPcGVyYSkgKi8KaDEsIGgyLCBoMywgaDQsIGg1LCBoNiB7CglwYWdlLWJyZWFrLWFmdGVyOiBhdm9pZDsKCXBhZ2UtYnJlYWstaW5zaWRlOiBhdm9pZDsKfQoKdWwsIG9sLCBkbCB7CglwYWdlLWJyZWFrLWluc2lkZTogYXZvaWQ7Cgljb2xvci1hZGp1c3Q6IGV4YWN0Owp9CgpoMiB7Cglmb250LXNpemU6IDEuM2VtOwoJbGluZS1oZWlnaHQ6IDEuM2VtOwp9CgphIHsKCWNvbG9yOiAjMDAwOwoJdGV4dC1kZWNvcmF0aW9uOiBub25lOwp9Cg==">
+	</head>
+	<body>
+		<ul class="report combineChildItems">
+			<li id="item_SV3UJZND" class="item journalArticle">
+			<h2>A novel technique to identify AIS transmissions from vessels 
+which attempt to obscure their position by switching their AIS 
+transponder from normal transmit power mode to low transmit power mode</h2>
+				<table>
+					<tbody><tr>
+						<th>Item Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Peter Kelly</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>Automatic Identification Systems (AIS) are transponder systems
+ installed on marine vessels which transmit the location, speed and 
+other vessel details. These signals are received by shore side AIS Base 
+stations. The use of AIS is mandatory under international SOLAS 
+regulations for certain categories of vessels. AIS is used to monitor 
+for pollution, search and rescue (SAR) and illegal fishing activity. 
+Some vessel operators deliberately interfere with their AIS 
+transponders, including spoofing their real position or switching their 
+AIS transponder to low transmit power, to reduce the likelihood of being
+ detected but still being in compliance with SOLAS regulations. This 
+might suggest that they are involved in nefarious activity. This paper 
+presents a technique to detect vessels which are switching their 
+Class-A, AIS transponders from normal transmit power to low transmit 
+power mode, by utilising the Received Signal strength Indicator field 
+(RSSI) that the receiving Base Station tags incoming AIS messages with. 
+The technique presented, analyses received RSSI in combination with 
+predicted RSSI values via mathematical modelling and presents a unique 
+detection algorithm. Data from the Irish National AIS was used for the 
+study. Although only a small amount of testing was carried out, results 
+showed that for a test vessel which switched its transponder to low 
+power transmit mode, it was found that a specific drop in RSSI of 
+approximately 10 dBm (decibel-milliwatts) was detectable for different 
+distances from the receiving base station.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2022</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>csu-maritime.primo.exlibrisgroup.com</td>
+					</tr>
+					<tr>
+					<th>Extra</th>
+						<td>Place: New York
+Publisher: Elsevier Ltd</td>
+					</tr>
+					<tr>
+					<th>Volume</th>
+						<td>202</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>117205-</td>
+					</tr>
+					<tr>
+					<th>Publication</th>
+						<td>Expert systems with applications</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1016/j.eswa.2022.117205">10.1016/j.eswa.2022.117205</a></td>
+					</tr>
+					<tr>
+					<th>ISSN</th>
+						<td>0957-4174</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>3/21/2024, 1:06:45 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>3/21/2024, 1:54:30 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Spoofing</li>
+					<li>AIS spoofing</li>
+					<li>Algorithms</li>
+					<li>Automatic identification system</li>
+					<li>Low transmit power</li>
+					<li>Operators (mathematics)</li>
+					<li>Received signal strength indicator</li>
+					<li>Receiving</li>
+					<li>Regulations</li>
+					<li>Sea vessels</li>
+					<li>Signal strength</li>
+					<li>Switching</li>
+					<li>Sybil attack</li>
+					<li>Transponders</li>
+				</ul>
+				<h3 class="notes">Notes:</h3>
+				<ul class="notes">
+					<li id="item_5NLTRUT2">
+<div><blockquote>DOI: 10.1016/j.eswa.2022.117205</blockquote></div>
+					</li>
+					<li id="item_EMUK9IAN">
+<div><div data-schema-version="8"><p>The abstract passes the sniff test. Will use article</p>
+</div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_ZFYMQ5ZF">Kelly - 2022 - A novel technique to identify AIS transmissions fr.pdf					</li>
+					<li id="item_W2DEED9D">uresolver.do					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_2IJHLTDM" class="item journalArticle">
+			<h2>AIS data manipulation in the illicit global oil trade</h2>
+				<table>
+					<tbody><tr>
+						<th>Item Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Andrej Androjna</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Ivica Pavić</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Lucjan Gucma</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Peter Vidmar</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Marko Perkovič</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>This article takes a close look at the landscape of global 
+navigation satellite system (GNSS) spoofing. It is well known that 
+automated identification system (AIS) spoofing can be used for 
+electronic warfare to conceal military activities in sensitive sea 
+areas; however, recent events suggest that there is a similar interest 
+of spoofing AIS signals for commercial purposes. The shipping industry 
+is currently experiencing an unprecedented period of deceptive practices
+ by tanker operators seeking to evade sanctions. Last year’s 
+announcement of a price cap on Russian crude oil and a new ban on 
+Western companies insuring Russian cargoes is setting the stage for an 
+increase in illegal activity. Our research team identified and 
+documented the AIS position falsification by tankers transporting 
+Russian crude oil in closed ship-to-ship (STS) oil transfers. The 
+identification of the falsified positions is based on the repeated 
+instances of discrepancies between AIS location suggestions and 
+satellite radar imagery indications. Using the data methods at our 
+disposal, we reconstructed the true movements of certain tankers and 
+encountered some surprising behavior. These false ship positions make it
+ clear that we need effective tools and strategies to ensure the 
+reliability and robustness of AISs.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2024</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>csu-maritime.primo.exlibrisgroup.com</td>
+					</tr>
+					<tr>
+					<th>Extra</th>
+						<td>Place: Basel
+Publisher: MDPI AG</td>
+					</tr>
+					<tr>
+					<th>Volume</th>
+						<td>12</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>6-</td>
+					</tr>
+					<tr>
+					<th>Publication</th>
+						<td>Journal of marine science and engineering</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.3390/jmse12010006">10.3390/jmse12010006</a></td>
+					</tr>
+					<tr>
+					<th>Issue</th>
+						<td>1</td>
+					</tr>
+					<tr>
+					<th>ISSN</th>
+						<td>2077-1312</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>3/21/2024, 1:06:45 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>3/21/2024, 1:54:51 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Spoofing</li>
+					<li>Accident investigations</li>
+					<li>Maritime industry</li>
+					<li>Territorial waters</li>
+					<li>Artificial satellites</li>
+					<li>automatic identification system (AIS)</li>
+					<li>Crude oil</li>
+					<li>Electronic warfare</li>
+					<li>falsification</li>
+					<li>Global navigation satellite system</li>
+					<li>International economic relations</li>
+					<li>International organizations</li>
+					<li>International trade</li>
+					<li>Military operations</li>
+					<li>Navigation</li>
+					<li>Navigational satellites</li>
+					<li>Oil</li>
+					<li>Oil spills</li>
+					<li>Oil tankers</li>
+					<li>Piracy</li>
+					<li>Planning</li>
+					<li>Ports</li>
+					<li>Radar imagery</li>
+					<li>Radar imaging</li>
+					<li>Radar systems</li>
+					<li>Responsible persons</li>
+					<li>Risk assessment</li>
+					<li>Robbery</li>
+					<li>Sanctions</li>
+					<li>Satellite imagery</li>
+					<li>Ship hijacking</li>
+					<li>Shipping</li>
+					<li>Shipping industry</li>
+					<li>Ships</li>
+					<li>Smuggling</li>
+					<li>spoofing and jamming</li>
+					<li>Tanker ships</li>
+					<li>Tankers</li>
+				</ul>
+				<h3 class="notes">Notes:</h3>
+				<ul class="notes">
+					<li id="item_EAICW7DI">
+<div><blockquote>DOI: 10.3390/jmse12010006</blockquote></div>
+					</li>
+					<li id="item_UMBVPC2Y">
+<div><div data-schema-version="8"><p>Good looking abstract, could use</p>
+</div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_2UCPDW6L">Full Text					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_9G53NWP5" class="item journalArticle">
+			<h2>AIS Data Vulnerability Indicated by a Spoofing Case-Study</h2>
+				<table>
+					<tbody><tr>
+						<th>Item Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Andrej Androjna</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Marko Perkovič</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Ivica Pavic</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Jakša Mišković</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>This paper takes a close look at the landscape of the 
+Automatic Identification System (AIS) as a major source of information 
+for maritime situational awareness (MSA) and identifies its 
+vulnerabilities and challenges for safe navigation and shipping. As an 
+important subset of cyber threats affecting many maritime systems, the 
+AIS is subject to problems of tampering and reliability; indeed, the 
+messages received may be inadvertently false, jammed, or intentionally 
+spoofed. A systematic literature review was conducted for this article, 
+complemented by a case study of a specific spoofing event near Elba in 
+December 2019, which confirmed that the typical maritime AIS could be 
+easily spoofed and generate erroneous position information. This 
+intentional spoofing has affected navigation in international waters and
+ passage through territorial waters. The maritime industry is neither 
+immune to cyberattacks nor fully prepared for the risks associated with 
+the use of modern digital systems. Maintaining seaworthiness in the face
+ of the impact of digital technologies requires a robust cybersecurity 
+framework.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2021/1</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>www.mdpi.com</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://www.mdpi.com/2076-3417/11/11/5015">https://www.mdpi.com/2076-3417/11/11/5015</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>3/24/2024, 6:46:25 PM</td>
+					</tr>
+					<tr>
+					<th>Rights</th>
+						<td>http://creativecommons.org/licenses/by/3.0/</td>
+					</tr>
+					<tr>
+					<th>Extra</th>
+						<td>Number: 11
+Publisher: Multidisciplinary Digital Publishing Institute</td>
+					</tr>
+					<tr>
+					<th>Volume</th>
+						<td>11</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>5015</td>
+					</tr>
+					<tr>
+					<th>Publication</th>
+						<td>Applied Sciences</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.3390/app11115015">10.3390/app11115015</a></td>
+					</tr>
+					<tr>
+					<th>Issue</th>
+						<td>11</td>
+					</tr>
+					<tr>
+					<th>ISSN</th>
+						<td>2076-3417</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>3/24/2024, 6:46:25 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>3/27/2024, 2:08:28 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Anomaly detection</li>
+					<li>Computer science</li>
+					<li>maritime situational awareness</li>
+					<li>Spoofing</li>
+					<li>Spoofing attack</li>
+					<li>Automatic Identification System (AIS)</li>
+					<li>Accident investigations</li>
+					<li>civil engineering</li>
+					<li>Computer security</li>
+					<li>cybersecurity</li>
+					<li>Data transmission</li>
+					<li>Digital systems</li>
+					<li>engineering and technology</li>
+					<li>Event (computing)</li>
+					<li>International waters</li>
+					<li>Literature reviews</li>
+					<li>Maritime industry</li>
+					<li>other engineering and technologies</li>
+					<li>Reliability (computer networking)</li>
+					<li>Satellites</li>
+					<li>Sea keeping</li>
+					<li>Situation awareness</li>
+					<li>Situational awareness</li>
+					<li>strategic, defence &amp; security studies</li>
+					<li>Territorial waters</li>
+					<li>the safety of navigation</li>
+					<li>Traffic congestion</li>
+					<li>Vulnerability</li>
+					<li>spoofing</li>
+					<li>anomaly detection</li>
+				</ul>
+				<h3 class="notes">Notes:</h3>
+				<ul class="notes">
+					<li id="item_ZNLLRR7Z">
+<div><blockquote>DOI: 10.3390/app11115015</blockquote></div>
+					</li>
+					<li id="item_5PMIF535">
+<div><div data-schema-version="8"><p>Good abstract, may use</p>
+</div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_MTPQLGGB">Full Text PDF					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_HVEDY8GH" class="item journalArticle">
+			<h2>AISChain: blockchain-based AIS data platform with dynamic bloom filter tree</h2>
+				<table>
+					<tbody><tr>
+						<th>Item Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Yongshuai Duan</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Junqin Huang</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Jiale Lei</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Linghe Kong</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Yibin Lv</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Zhiliang Lin</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Guihai Chen</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Muhammad Khurram Khan</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>Since 2002, hundreds of thousands of vessels have equipped the
+ Automatic Identification System (AIS), which continuously broadcasts 
+its identity and location information for vessel collision avoidance. To
+ utilize these scattered AIS data for further analysis, there are 
+multiple AIS data platforms collecting AIS data from vessels around the 
+world through their satellites and land-based stations. Thus, users can 
+obtain AIS data of vessels from these platforms without dedicated 
+devices. However, existing platforms work in silos, and AIS data is 
+distributed across different platforms, resulting in reduced data 
+availability. In addition, AIS is vulnerable to jamming and spoofing 
+attacks, which can undermine the authenticity of AIS data. In this 
+paper, we propose AISChain, a secure and fast blockchain-based AIS data 
+platform. AISChain adopts consortium blockchain, which only permits 
+those authorized parties (i.e., AIS data providers) to participate in 
+the consensus protocol, and is compatible with current commodity AIS 
+hardware. Since the whole system is co-maintained by multiple authorized
+ parties, AISChain can integrate AIS data resources in a secure way. For
+ avoiding repeated recording of AIS data on the chain, we design the 
+Dynamic Bloom Filter Tree (DBFT) to realize efficient duplication 
+detection in the transaction verification phase. We also propose the 
+dual signature scheme to clarify the AIS data ownership. Moreover, we 
+leverage the geographical location-based blockchain sharding approach to
+ further improve the scalability of AISChain. We implement a prototype 
+of AISChain, and conduct extensive experiments to evaluate the 
+performance of AISChain. Evaluation results show that the search time of
+ DBFT is negligible (4.3 ms) with an extreme low error ratio (0.4%). 
+Meanwhile, AISChain can achieve more than 730 tx/s throughput even when 
+nodes scale to 36. To the best of our knowledge, AISChain is the first 
+work to apply the blockchain technology to secure the AIS data platform.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2023</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>Aischain</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>csu-maritime.primo.exlibrisgroup.com</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://ieeexplore.ieee.org/document/9829228">https://ieeexplore.ieee.org/document/9829228</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>3/21/2024, 12:48:56 PM</td>
+					</tr>
+					<tr>
+					<th>Extra</th>
+						<td>Publisher: IEEE</td>
+					</tr>
+					<tr>
+					<th>Volume</th>
+						<td>24</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>2332–2343</td>
+					</tr>
+					<tr>
+					<th>Publication</th>
+						<td>IEEE transactions on intelligent transportation systems</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/TITS.2022.3188691">10.1109/TITS.2022.3188691</a></td>
+					</tr>
+					<tr>
+					<th>Issue</th>
+						<td>2</td>
+					</tr>
+					<tr>
+					<th>ISSN</th>
+						<td>1524-9050</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>3/21/2024, 1:06:45 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>3/21/2024, 1:55:15 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Artificial intelligence</li>
+					<li>Automatic identification system</li>
+					<li>Safety</li>
+					<li>blockchain</li>
+					<li>Blockchains</li>
+					<li>bloom filter</li>
+					<li>Electronic mail</li>
+					<li>Satellite broadcasting</li>
+					<li>security</li>
+					<li>Soft sensors</li>
+					<li>Throughput</li>
+				</ul>
+				<h3 class="notes">Notes:</h3>
+				<ul class="notes">
+					<li id="item_MUJPEUKK">
+<div><div data-schema-version="8"><p>This might be an interesting 
+solution to ensure validity and trust of AIS data, but Blockchain is a 
+somewhat difficult concept to present on, and AIS information is not 
+transactional like a ledger is. Need to read deeper, might either 
+disqualify the article, or keep it as a “possible soltuition that we 
+don’t like”</p>
+</div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_EZHMRKCD">Duan et al. - 2023 - AISChain blockchain-based AIS data platform with .pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_53U9SEEY" class="item journalArticle">
+			<h2>BATMAN: a brain-like approach for tracking maritime activity and nuance</h2>
+				<table>
+					<tbody><tr>
+						<th>Item Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Alexander Jones</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Stephan Koehler</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Michael Jerge</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Mitchell Graves</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Bayley King</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Richard Dalrymple</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Cody Freese</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>James Von Albade</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>As commercial geospatial intelligence data becomes more widely
+ available, algorithms using artificial intelligence need to be created 
+to analyze it. Maritime traffic is annually increasing in volume, and 
+with it the number of anomalous events that might be of interest to law 
+enforcement agencies, governments, and militaries. This work proposes a 
+data fusion pipeline that uses a mixture of artificial intelligence and 
+traditional algorithms to identify ships at sea and classify their 
+behavior. A fusion process of visual spectrum satellite imagery and 
+automatic identification system (AIS) data was used to identify ships. 
+Further, this fused data was further integrated with additional 
+information about the ship's environment to help classify each ship's 
+behavior to a meaningful degree. This type of contextual information 
+included things such as exclusive economic zone boundaries, locations of
+ pipelines and undersea cables, and the local weather. Behaviors such as
+ illegal fishing, trans-shipment, and spoofing are identified by the 
+framework using freely or cheaply accessible data from places such as 
+Google Earth, the United States Coast Guard, etc. The pipeline is the 
+first of its kind to go beyond the typical ship identification process 
+to help aid analysts in identifying tangible behaviors and reducing the 
+human workload.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2023</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>Batman</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>csu-maritime.primo.exlibrisgroup.com</td>
+					</tr>
+					<tr>
+					<th>Extra</th>
+						<td>Place: Switzerland
+Publisher: MDPI AG</td>
+					</tr>
+					<tr>
+					<th>Volume</th>
+						<td>23</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>2424-</td>
+					</tr>
+					<tr>
+					<th>Publication</th>
+						<td>Sensors (Basel, Switzerland)</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.3390/s23052424">10.3390/s23052424</a></td>
+					</tr>
+					<tr>
+					<th>Issue</th>
+						<td>5</td>
+					</tr>
+					<tr>
+					<th>ISSN</th>
+						<td>1424-8220</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>3/21/2024, 1:06:45 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>3/21/2024, 1:55:33 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Artificial intelligence</li>
+					<li>Spoofing</li>
+					<li>Remote sensing</li>
+					<li>Algorithms</li>
+					<li>Satellite imagery</li>
+					<li>Shipping industry</li>
+					<li>Ships</li>
+					<li>Behavior</li>
+					<li>Classification</li>
+					<li>Coastguard services</li>
+					<li>dark ships</li>
+					<li>data fusion</li>
+					<li>Data integration</li>
+					<li>Datasets</li>
+					<li>Earth</li>
+					<li>Labeling</li>
+					<li>Neural networks</li>
+					<li>ship behavior</li>
+					<li>Submarine cables</li>
+				</ul>
+				<h3 class="notes">Notes:</h3>
+				<ul class="notes">
+					<li id="item_QSAN52IN">
+<div><div data-schema-version="8"><p>Use the AI to defeat the AIS,but that opens a different can of worms. Will read more.</p>
+</div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_CBCBLAHH">Full Text					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_GIM3K7A4" class="item webpage">
+			<h2>Black Sea shipping hit by rising Russian GPS jamming</h2>
+				<table>
+					<tbody><tr>
+						<th>Item Type</th>
+						<td>Web Page</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Bridget Diakun</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Richard Meade</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>03/08/2024</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://www.lloydslist.com/LL1148493/Black-Sea-shipping-hit-by-rising-Russian-GPS-jamming">https://www.lloydslist.com/LL1148493/Black-Sea-shipping-hit-by-rising-Russian-GPS-jamming</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>3/24/2024, 6:45:31 PM</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>3/24/2024, 6:45:31 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>3/27/2024, 4:02:05 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="notes">Notes:</h3>
+				<ul class="notes">
+					<li id="item_FYHA39QB">
+<div><div data-schema-version="8"><p>Ben, this is one of your sources, do you know where we’ll put this in?</p>
+</div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_VMVW4MJZ">Black Sea shipping hit by rising Russian GPS jamming :: Lloyd's List					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_YP9PGRXY" class="item journalArticle">
+			<h2>Data integrity assessment for maritime anomaly detection</h2>
+				<table>
+					<tbody><tr>
+						<th>Item Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Clément Iphar</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Cyril Ray</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Aldo Napoli</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>•AIS data assessment through data integrity methods is 
+efficient.•A proper maritime situation awareness requires a variety of 
+flags to be assessed.•Maritime traffic anomaly visualisation is 
+important for efficient decision-making.
+In the last years, systems broadcasting mobility data underwent a rise 
+in cyberthreats, jeopardising their normal use and putting both users 
+and their environment at risk. In this respect, anomaly detection 
+methods are needed to ensure an assessment of such systems. In this 
+article, we propose a rule-based method for data integrity assessment, 
+with rules built from the system technical specifications and by domain 
+experts, and formalised by a logic-based framework, resulting in the 
+triggering of situation-specific alerts. A use case is proposed on the 
+Automatic Identification System, a worldwide localisation system for 
+vessels, based on its poor level of security which allows errors, 
+falsifications and spoofing scenarios. The discovery of abnormal 
+reporting cases aims to assist marine traffic surveillance, preserve the
+ human life at sea and mitigate hazardous behaviours against ports, 
+off-shore structures and the environment.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2020</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>csu-maritime.primo.exlibrisgroup.com</td>
+					</tr>
+					<tr>
+					<th>Extra</th>
+						<td>Place: New York
+Publisher: Elsevier Ltd</td>
+					</tr>
+					<tr>
+					<th>Volume</th>
+						<td>147</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>113219-</td>
+					</tr>
+					<tr>
+					<th>Publication</th>
+						<td>Expert systems with applications</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1016/j.eswa.2020.113219">10.1016/j.eswa.2020.113219</a></td>
+					</tr>
+					<tr>
+					<th>ISSN</th>
+						<td>0957-4174</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>3/21/2024, 1:06:45 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>3/21/2024, 1:06:45 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Anomalies</li>
+					<li>Spoofing</li>
+					<li>AIS</li>
+					<li>Data falsification</li>
+					<li>Data integrity</li>
+					<li>domain_shs.gest-risq</li>
+					<li>Engineering Sciences</li>
+					<li>Humanities and Social Sciences</li>
+					<li>Integrity</li>
+					<li>Integrity assessment</li>
+					<li>Offshore structures</li>
+					<li>Traffic surveillance</li>
+				</ul>
+				<h3 class="notes">Notes:</h3>
+				<ul class="notes">
+					<li id="item_TC7YK58V">
+<div><div data-schema-version="8"><p>This paper seems to be our whole schtick, gotta take a lot and cite carefully. Will use paper.</p>
+</div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_PXFYKIWH">Full Text					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_N55R6QK3" class="item webpage">
+			<h2>DeAIS project: detection of AIS spoofing and resulting risks | ieee conference publication | ieee xplore</h2>
+				<table>
+					<tbody><tr>
+						<th>Item Type</th>
+						<td>Web Page</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Cyril Ray</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Romain Gallen</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Clément Iphar</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Aldo Napoli</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Alain Bouju</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>Crossroads of international issues, maritime domain is facing 
+growing human activities (fishing, transportation, boating...) involving
+ a large spectrum of ships from small sailing boats to super tankers. 
+This increase of maritime mobilities has favored the appearance and 
+generalization of position report systems for keeping track of ships 
+movements. Amongst these systems, cooperative position reports using 
+devices such as the Automatic Identification System (AIS) have been 
+widely deployed and used. Recent works have shown that falsification of 
+AIS messages is possible, and therefore could mask or favor illegal 
+actions, lead to disturbance of monitoring systems and new maritime 
+risks. This paper presents these new threats and risks and introduces a 
+novel methodological approach for modelling, analyzing and detecting 
+such maritime events</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://ieeexplore.ieee.org/abstract/document/7271729">https://ieeexplore.ieee.org/abstract/document/7271729</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>3/21/2024, 1:14:53 PM</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>3/21/2024, 1:14:53 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>3/27/2024, 3:18:32 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Automatic identification system (AIS)</li>
+					<li>Data mining</li>
+					<li>Maritime risks</li>
+				</ul>
+				<h3 class="notes">Notes:</h3>
+				<ul class="notes">
+					<li id="item_46MM63E9">
+<div><div data-schema-version="8"><p>This is on topic, but the people are french and the translation is weird. Read Carefully</p>
+</div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_X5KFR27E">DeAIS project detection of AIS spoofing and resul.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_I9F9W9QV" class="item journalArticle">
+			<h2>Detection of AIS messages falsifications and spoofing by checking messages compliance with TDMA protocol</h2>
+				<table>
+					<tbody><tr>
+						<th>Item Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Maelic Louart</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Jean-Jacques Szkolnik</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Abdel-Ouahab Boudraa</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Jean-Christophe Le Lann</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Frédéric Le Roy</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>Automatic identification system is a navigation aid system 
+that allows vessels to exchange automatically positions, identity and 
+other information. It improves the safety of the maritime traffic and 
+helps to monitor it. However, this system can be manipulated to send 
+falsified information and to mask illicit activities. While previous 
+research has proposed strategies to detect these threats, none of them 
+suggest a solution that considers the time-division multiple access 
+(TDMA) communication protocol. In this work, the compliance of the sent 
+messages with this protocol, specified by the system's standard, is 
+checked for every ship to detect message falsifications. Furthermore, 
+because the ships velocity affects TDMA protocol, a strategy based a 
+Kalman filter is applied to track every ship and to assess the 
+consistency of their velocity data sent. The proposed strategy was 
+validated on real data and showed very promising results. Being 
+computationally cheap, the method can be run in real time. Source codes 
+of the method are open-source to foster research activities from both 
+industry and academia in this field.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2023</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>csu-maritime.primo.exlibrisgroup.com</td>
+					</tr>
+					<tr>
+					<th>Extra</th>
+						<td>Publisher: Elsevier Inc</td>
+					</tr>
+					<tr>
+					<th>Volume</th>
+						<td>136</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>103983-</td>
+					</tr>
+					<tr>
+					<th>Publication</th>
+						<td>Digital signal processing</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1016/j.dsp.2023.103983">10.1016/j.dsp.2023.103983</a></td>
+					</tr>
+					<tr>
+					<th>ISSN</th>
+						<td>1051-2004</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>3/21/2024, 1:06:45 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>3/21/2024, 1:06:45 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Automatic Control Engineering</li>
+					<li>Automatic Identification System (AIS)</li>
+					<li>Computer Science</li>
+					<li>Falsifications detection</li>
+					<li>Kalman filtering</li>
+					<li>Spoofing detection</li>
+					<li>TDMA protocol</li>
+				</ul>
+				<h3 class="notes">Notes:</h3>
+				<ul class="notes">
+					<li id="item_PLW2EWD5">
+<div><blockquote>DOI: 10.1016/j.dsp.2023.103983</blockquote></div>
+					</li>
+					<li id="item_HJNGUCRA">
+<div><div data-schema-version="8"><p>Seems promising, “computationally cheap” means it is easy to check, but might be easy as well to break.</p>
+</div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_H4H26MY8">Louart et al. - 2023 - Detection of AIS messages falsifications and spoof.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_MJZYTCDS" class="item conferencePaper">
+			<h2>Detection of AIS spoofing in fishery scenarios</h2>
+				<table>
+					<tbody><tr>
+						<th>Item Type</th>
+						<td>Conference Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Max Krüger</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>For the purpose of maritime safety, information, and 
+surveillance, almost all sea-going vessels have to participate in the 
+Automatic Identification System (AIS). This system serves as a 
+cooperative VHF-radio exchange of navigational and ships' information. 
+Since AIS broadcasts self-declared information, it is open to fraudulent
+ misuse by users. Based on different approaches to classification of 
+maritime vessels, i.e., Random Forest, Voting-2-of-3, Decision Tree, 
+Fuzzy Rule, and k Nearest Neighbor, this contribution addresses the 
+question, up to which accuracy it is possible, to detect fishery vessels
+ with spoofed AIS-type based only on ship's positional, motion, and 
+dimensions' AIS-data. For this purpose, in real-life AIS datasets from 
+early summer 2017 the classification results of AIS fishery type are 
+evaluated and compared.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2019-07</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>IEEE Xplore</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://ieeexplore.ieee.org/abstract/document/9011328">https://ieeexplore.ieee.org/abstract/document/9011328</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>3/21/2024, 1:15:16 PM</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>1-7</td>
+					</tr>
+					<tr>
+					<th>Proceedings Title</th>
+						<td>2019 22th International Conference on Information Fusion (FUSION)</td>
+					</tr>
+					<tr>
+					<th>Conference Name</th>
+						<td>2019 22th International Conference on Information Fusion (FUSION)</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.23919/FUSION43075.2019.9011328">10.23919/FUSION43075.2019.9011328</a></td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>3/21/2024, 1:15:17 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>3/21/2024, 1:56:19 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Artificial intelligence</li>
+					<li>Surveillance</li>
+					<li>Marine vehicles</li>
+					<li>AIS</li>
+					<li>Aquaculture</li>
+					<li>classification</li>
+					<li>Decision Tree</li>
+					<li>Decision trees</li>
+					<li>fishery</li>
+					<li>Forestry</li>
+					<li>fraud detection</li>
+					<li>Fuzzy Rule</li>
+					<li>kNearest Neighbor</li>
+					<li>KNIME Analytics Platform</li>
+					<li>maritime surveillance systems</li>
+					<li>performance evaluation</li>
+					<li>Random Forest</li>
+					<li>spoofing</li>
+					<li>Training</li>
+					<li>Voting-2-of-3</li>
+				</ul>
+				<h3 class="notes">Notes:</h3>
+				<ul class="notes">
+					<li id="item_2XIRG5SJ">
+<div><blockquote>10.23919/FUSION43075.2019.9011328</blockquote></div>
+					</li>
+					<li id="item_9KP9NSR3">
+<div><div data-schema-version="8"><p>This paper should have a lot of really good technical language to use.</p>
+</div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_6LP5GPER">IEEE Xplore Abstract Record					</li>
+					<li id="item_2Y7UKXGT">Krüger - 2019 - Detection of AIS spoofing in fishery scenarios.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_QFKVJ4FY" class="item conferencePaper">
+			<h2>Detection of false AIS messages for the improvement of maritime situational awareness</h2>
+				<table>
+					<tbody><tr>
+						<th>Item Type</th>
+						<td>Conference Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Clément Iphar</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Aldo Napoli</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Cyril Ray</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>The Automatic Identification System (AIS) was initially 
+designed for safety and security of navigation purposes. However it was 
+progressively also used for other objectives, such as surveillance, and 
+thus led to the discovery of behaviors such as the falsification of the 
+AIS messages by people that have been carrying out illegal activities 
+and will to keep their activities up in an hidden way. In addition, the 
+messages contain erroneous data and undergo spoofing attacks. The paper 
+introduces the quality dimensions of data that shall be used in a 
+quality assessment of AIS messages, in order to point out the dubious 
+ones. The principles of a methodological approach for the detection of 
+such data errors and falsifications are introduced.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2015</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>csu-maritime.primo.exlibrisgroup.com</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://ieeexplore.ieee.org/document/7401841">https://ieeexplore.ieee.org/document/7401841</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>3/21/2024, 12:48:52 PM</td>
+					</tr>
+					<tr>
+					<th>Extra</th>
+						<td>Book Title: OCEANS 2015 - MTS/IEEE Washington</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>MTS</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-0-933957-43-5</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>1–7</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.23919/OCEANS.2015.7401841">10.23919/OCEANS.2015.7401841</a></td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>3/21/2024, 1:06:45 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>3/21/2024, 1:06:45 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Automatic Identification System</li>
+					<li>Transponders</li>
+					<li>Satellites</li>
+					<li>Navigation</li>
+					<li>data falsification</li>
+					<li>data quality dimensions</li>
+					<li>Marine vehicles</li>
+					<li>maritime domain awareness</li>
+					<li>Receivers</li>
+					<li>Safety</li>
+					<li>Security</li>
+				</ul>
+				<h3 class="notes">Notes:</h3>
+				<ul class="notes">
+					<li id="item_JF6IBUAP">
+<div><div data-schema-version="8"><p>This paper, from abstract, also looks good, but this might be redundant. May cut, even though this is good.</p>
+</div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_H8ZD84T2">Submitted Version					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_RBL26939" class="item conferencePaper">
+			<h2>Detection of malicious AIS position spoofing by exploiting radar information</h2>
+				<table>
+					<tbody><tr>
+						<th>Item Type</th>
+						<td>Conference Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Fotios Katsilieris</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Paolo Braca</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Stefano Coraluppi</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>The Automatic Identification System (AIS) is an automatic 
+tracking system based on reports provided by the vessels carrying an AIS
+ transponder. The reports contain information on the vessel position, 
+velocity etc. and typically have high accuracy. Given that the AIS is a 
+self-reporting system, the trustworthiness of positional information 
+depends on data being reported by the vessel, rather than measured by a 
+sensor. Any self-reporting system is prone to "spoofing" or the 
+intentional reporting on incorrect information. This paper addresses the
+ inference problem of whether the received AIS data are trustworthy with
+ the help of radar measurements and information from the tracking 
+system. This problem can be treated in the hypothesis testing framework 
+where the null hypothesis is that the AIS data are trustworthy and the 
+alternative hypothesis is that the data are spoofed. The proposed 
+solution, the generalized version of the sequential log-likelihood ratio
+ test, is compared to the ideally optimal solution using real and 
+simulated data.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2013</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>csu-maritime.primo.exlibrisgroup.com</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://ieeexplore.ieee.org/document/6641132">https://ieeexplore.ieee.org/document/6641132</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>3/21/2024, 12:48:26 PM</td>
+					</tr>
+					<tr>
+					<th>Extra</th>
+						<td>Book Title: Proceedings of the 16th International Conference on Information Fusion</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>ISIF  Intl Society of Information Fusi</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-605-86311-1-3</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>1196–1203</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>3/21/2024, 1:06:45 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>3/21/2024, 1:06:45 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Radar tracking</li>
+					<li>Testing</li>
+					<li>Accuracy</li>
+					<li>Approximation methods</li>
+					<li>Radar detection</li>
+					<li>Radar measurements</li>
+				</ul>
+				<h3 class="notes">Notes:</h3>
+				<ul class="notes">
+					<li id="item_CUJYKJKL">
+<div><blockquote>EISBN: 9781479902842</blockquote></div>
+					</li>
+					<li id="item_C864C82T">
+<div><div data-schema-version="8"><p>Love this, using radar to check AIS data sounds like something I’d come up with myself. Gotta read this one.</p>
+</div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_2EV6EWWA">Katsilieris et al. - 2013 - Detection of malicious AIS position spoofing by ex.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_NW75XZQE" class="item webpage">
+			<h2>Fake coordinates and tanker tricks expose shadowy russian oil trade</h2>
+				<table>
+					<tbody><tr>
+						<th>Item Type</th>
+						<td>Web Page</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Bloomberg</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>(Bloomberg) — On a sunny day off the southern coast of Greece 
+last week, two aging tankers nestled next to each other while one pumped
+ oil&nbsp;to the other. As far...</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2023-09-27T16:27:17+00:00</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en-US</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://gcaptain.com/fake-coordinates-and-tanker-tricks-expose-shadowy-russian-oil-trade/">https://gcaptain.com/fake-coordinates-and-tanker-tricks-expose-shadowy-russian-oil-trade/</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>3/24/2024, 6:45:20 PM</td>
+					</tr>
+					<tr>
+					<th>Website Title</th>
+						<td>gCaptain</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>3/24/2024, 6:45:20 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>3/27/2024, 2:10:14 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="notes">Notes:</h3>
+				<ul class="notes">
+					<li id="item_WZTCI2H3">
+<div><div data-schema-version="8"><p>If this article is linked from 
+Bloomberg through Gcaptain, we should either go with the Bloomberg link 
+itself, if not to just get the actual author and date information from 
+Bloomberg. </p>
+</div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_EE2XSH2R">Snapshot					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_KFYXR27Z" class="item webpage">
+			<h2>HMS Defender: AIS spoofing is opening up a new front in the war on reality</h2>
+				<table>
+					<tbody><tr>
+						<th>Item Type</th>
+						<td>Web Page</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Tom Bateman</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>A British warship triggered a dispute with Russia last week. 
+But the conflict may have begun online even before alleged warning shots
+ were fired.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2021-06-28</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>Fake ships, real conflict</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://www.euronews.com/next/2021/06/28/hms-defender-ais-spoofing-is-opening-up-a-new-front-in-the-war-on-reality">https://www.euronews.com/next/2021/06/28/hms-defender-ais-spoofing-is-opening-up-a-new-front-in-the-war-on-reality</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>3/27/2024, 3:56:24 PM</td>
+					</tr>
+					<tr>
+					<th>Website Title</th>
+						<td>euronews</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>3/27/2024, 3:56:24 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>3/27/2024, 3:57:02 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_69XWXVDY">Snapshot					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_3RXSHUMY" class="item conferencePaper">
+			<h2>Holistic Approach of Integrated Navigation Equipment for Cybersecurity at Sea</h2>
+				<table>
+					<tbody><tr>
+						<th>Item Type</th>
+						<td>Conference Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Clet Boudehenn</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Jean-Christophe Cexus</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Ramla Abdelkader</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Maxence Lannuzel</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Olivier Jacq</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>David Brosset</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Abdel Boudraa</td>
+					</tr>
+					<tr>
+						<th class="editor">Editor</th>
+						<td>Cyril Onwubiko</td>
+					</tr>
+					<tr>
+						<th class="editor">Editor</th>
+						<td>Pierangelo Rosati</td>
+					</tr>
+					<tr>
+						<th class="editor">Editor</th>
+						<td>Aunshul Rege</td>
+					</tr>
+					<tr>
+						<th class="editor">Editor</th>
+						<td>Arnau Erola</td>
+					</tr>
+					<tr>
+						<th class="editor">Editor</th>
+						<td>Xavier Bellekens</td>
+					</tr>
+					<tr>
+						<th class="editor">Editor</th>
+						<td>Hanan Hindy</td>
+					</tr>
+					<tr>
+						<th class="editor">Editor</th>
+						<td>Martin Gilje Jaatun</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>Recent studies have demonstrated the interest of analyzing 
+GNSS (Global Navigation Satellite System) and AIS (Automatic Id 
+entification System) data to improve the safety of naval infrastructures
+ for a wide spectrum of maritime applications. However, in-depth 
+analyses also underline the sensitivity of these systems to attacks such
+ as jamming and spoofing. In this context, it is essential that 
+researchers, specialized organizations and companies rely on realistic 
+data to improve these types of systems to better detect and cope with 
+potential threats. However, because of the lack of open data sets, or 
+due to financial, technical or operational reasons, the use of simulated
+ data is preferred in most cases over real life data, which can lead to 
+biases. To cope with this challenge, we have developed a prototype 
+called “HAPPINESS” for “Holistic APProach of Integrated Navigation 
+Equipment for Cybersecurity at Sea”. The main objective of this 
+dedicated and autonomous embedded system is to collect navigation data 
+in real time without using proprietary or restrictive protocols. The 
+generated open data, then continuously feeds a cyber naval platform able
+ to reproduce the functional and operational systems of a ship. This 
+prototype allows to reproduce the kinematics of a ship in various 
+contexts (like specific maneuvers, long tracks, docking…) in NMEA format
+ in order to design highly realistic scenarios based on real life data 
+and allowing to obtain more complete and richer data (than those freely 
+accessible online) in terms of information, giving additional means to 
+detect anomalies on navigation systems.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2023</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>Springer Link</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>Singapore</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>Springer Nature</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-981-19641-4-5</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>75-86</td>
+					</tr>
+					<tr>
+					<th>Proceedings Title</th>
+						<td>Proceedings of the International Conference on Cybersecurity, Situational Awareness and Social Media</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1007/978-981-19-6414-5_5">10.1007/978-981-19-6414-5_5</a></td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>3/27/2024, 3:50:30 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>3/27/2024, 3:50:30 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>AIS</li>
+					<li>Data Collection</li>
+					<li>Embedded systems</li>
+					<li>GNSS</li>
+					<li>GPS</li>
+					<li>Maritime systems</li>
+					<li>Navigation data sets generation</li>
+					<li>Navigation systems</li>
+					<li>NMEA</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_LTLGWNP9">Submitted Version					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_8CMZ7KXB" class="item webpage">
+			<h2>How illegal fishing ships hide</h2>
+				<table>
+					<tbody><tr>
+						<th>Item Type</th>
+						<td>Web Page</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Mark Harris</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>3/7/2024</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://nautil.us/how-illegal-fishing-ships-hide-526064/">https://nautil.us/how-illegal-fishing-ships-hide-526064/</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>3/24/2024, 6:46:49 PM</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>3/24/2024, 6:46:49 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>3/27/2024, 3:58:50 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_5U7GL7AQ">Harris - 2024 - How illegal fishing ships hide.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_2MZJIGKD" class="item journalArticle">
+			<h2>Impact of Spoofing of Navigation Systems on Maritime Situational Awareness</h2>
+				<table>
+					<tbody><tr>
+						<th>Item Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Andrej Androjna</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Marko Perkovič</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>The development of contemporary navigation and positioning 
+systems have significantly improved reliability and speeds in maritime 
+navigation. At the same time, the vulnerabilities of these systems to 
+cyber threats represent a remarkable issue to the safety of navigation. 
+Therefore, the maritime community has raised the question of 
+cybersecurity of navigation systems in recent years. This paper aims to 
+analyse the vulnerabilities of the Global Navigation Satellite System 
+(GNSS), Electronic Chart Display Information System (ECDIS) and 
+Automatic Identification System (AIS). The concepts of these systems 
+were developed at a time when cybersecurity issues have not been among 
+the&nbsp; top priorities. Open broadcasts, the absence of or limited 
+existence of data encryption and authentication can be considered as 
+their primary security weaknesses. Therefore, these systems are 
+vulnerable to cyber-attacks. The GPS as the data source of a ship’s 
+position can relatively easily be jammed and/or spoofed, increasing the 
+vulnerabilities of ECDIS and AIS. A systematic literature review was 
+conducted for this article, supplemented by a SWOT analysis of the AIS 
+service and particular case studies of recent cyber-attacks on these 
+systems. The analysis of selected case studies confirmed that these 
+systems could easily be spoofed and become a subject of data 
+manipulation with significant consequences for the safety of navigation.
+ The paper provides conclusions and recommendations highlighting the 
+necessity for the users to be aware of the vulnerabilities of modern 
+navigation systems.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2021-10-21</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>www.toms.com.hr</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://www.toms.com.hr/index.php/toms/article/view/440">https://www.toms.com.hr/index.php/toms/article/view/440</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>3/27/2024, 3:53:31 PM</td>
+					</tr>
+					<tr>
+					<th>Rights</th>
+						<td>Copyright (c) 2021 Transactions on Maritime Science</td>
+					</tr>
+					<tr>
+					<th>Extra</th>
+						<td>Number: 2</td>
+					</tr>
+					<tr>
+					<th>Volume</th>
+						<td>10</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>361-373</td>
+					</tr>
+					<tr>
+					<th>Publication</th>
+						<td>Transactions on Maritime Science</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.7225/toms.v10.n02.w08">10.7225/toms.v10.n02.w08</a></td>
+					</tr>
+					<tr>
+					<th>Issue</th>
+						<td>2</td>
+					</tr>
+					<tr>
+					<th>ISSN</th>
+						<td>1848-3313</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>3/27/2024, 3:53:31 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>3/27/2024, 3:53:31 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Spoofing</li>
+					<li>Cybersecurity</li>
+					<li>Jamming</li>
+					<li>Safety of navigation</li>
+					<li>Shipboard navigation systems</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_MWCJV85S">Full Text PDF					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_6YMWSI63" class="item journalArticle">
+			<h2>Malicious AIS spoofing and abnormal stealth deviations: a comprehensive statistical framework for maritime anomaly detection</h2>
+				<table>
+					<tbody><tr>
+						<th>Item Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Enrica d'Afflisio</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Paolo Braca</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Peter Willett</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>The automatic identification system (AIS) is an essential and 
+economical equipment for collision avoidance and maritime surveillance. 
+However, AIS can be subject to intentional reporting of false 
+information, or “spoofing”. This article assumes the vessel trajectory 
+nominally follows a piecewise mean-reverting process; thereby, it 
+addresses the problem of establishing whether a vessel is reporting 
+adulterated position information through AIS messages in order to hide 
+its current planned route and a possible deviation from the nominal 
+route. Multiple hypothesis testing suggests a framework to enlist 
+reliable information from monitoring systems (coastal radars and 
+space-born satellite sensors) in support of detection of anomalies, 
+spoofing, and stealth deviations. The proposed solution involves the 
+derivation of anomaly detection rules based on the generalized 
+likelihood ratio test and the model-order selection methodologies. The 
+effectiveness of the proposed anomaly detection strategy is tested for 
+different case studies within an operational scenario with simulated 
+data.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2021</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>Malicious ais spoofing and abnormal stealth deviations</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>csu-maritime.primo.exlibrisgroup.com</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://ieeexplore.ieee.org/document/9473225">https://ieeexplore.ieee.org/document/9473225</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>3/21/2024, 12:44:15 PM</td>
+					</tr>
+					<tr>
+					<th>Extra</th>
+						<td>Place: New York
+Publisher: IEEE</td>
+					</tr>
+					<tr>
+					<th>Volume</th>
+						<td>57</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>2093–2108</td>
+					</tr>
+					<tr>
+					<th>Publication</th>
+						<td>IEEE transactions on aerospace and electronic systems</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1109/TAES.2021.3083466">10.1109/TAES.2021.3083466</a></td>
+					</tr>
+					<tr>
+					<th>Issue</th>
+						<td>4</td>
+					</tr>
+					<tr>
+					<th>ISSN</th>
+						<td>0018-9251</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>3/21/2024, 1:06:45 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>3/21/2024, 1:56:41 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Anomalies</li>
+					<li>Anomaly detection</li>
+					<li>Artificial intelligence</li>
+					<li>Automatic identification system (AIS)</li>
+					<li>Collision avoidance</li>
+					<li>Computer science</li>
+					<li>Data mining</li>
+					<li>Data modeling</li>
+					<li>Data models</li>
+					<li>data spoofing</li>
+					<li>Deviation</li>
+					<li>Hypothesis testing</li>
+					<li>Likelihood ratio</li>
+					<li>Likelihood-ratio test</li>
+					<li>maritime anomaly detection</li>
+					<li>maritime security</li>
+					<li>maritime situational awareness</li>
+					<li>Model testing</li>
+					<li>model-order selection (MOS)</li>
+					<li>multiple statistical hypothesis test</li>
+					<li>Ornstein–Uhlenbeck (OU) process</li>
+					<li>Process (computing)</li>
+					<li>Radar</li>
+					<li>Radar tracker</li>
+					<li>Radar tracking</li>
+					<li>Spoofing</li>
+					<li>Spoofing attack</li>
+					<li>Surveillance</li>
+					<li>target tracking</li>
+					<li>Testing</li>
+					<li>Trajectory</li>
+				</ul>
+				<h3 class="notes">Notes:</h3>
+				<ul class="notes">
+					<li id="item_CIVVYTXQ">
+<div><blockquote>DOI: 10.1109/TAES.2021.3083466</blockquote></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_RDFXEF8L">d'Afflisio et al. - 2021 - Malicious AIS spoofing and abnormal stealth deviat.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_G5SWZFWG" class="item webpage">
+			<h2>Planet Labs secures major U.S. Navy contract for advanced maritime monitoring</h2>
+				<table>
+					<tbody><tr>
+						<th>Item Type</th>
+						<td>Web Page</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Mike Schuler</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>Planet Labs PBC, a provider of daily Earth data and insights, 
+has announced a major contract award from the Naval Information Warfare 
+Center (NIWC) Pacific for vessel detection and monitoring....</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2024-03-05T18:19:56+00:00</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en-US</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://gcaptain.com/planet-labs-secures-major-niwc-pacific-contract/">https://gcaptain.com/planet-labs-secures-major-niwc-pacific-contract/</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>3/24/2024, 6:45:12 PM</td>
+					</tr>
+					<tr>
+					<th>Website Title</th>
+						<td>gCaptain</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>3/24/2024, 6:45:12 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>3/27/2024, 2:09:36 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_V2EGV98W">Snapshot					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_7XDI2WTR" class="item journalArticle">
+			<h2>Protected AIS: a demonstration of capability scheme to provide authentication and message integrity</h2>
+				<table>
+					<tbody><tr>
+						<th>Item Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Gary C. Kessler</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>The Automatic Identification System (AIS) provides situational
+ awareness for vessels at sea. AIS has a number of known security 
+vulnerabilities that can lead to a several types of attacks on AIS, 
+including the ability to create ghost vessels, false warning or 
+meteorological messages, or bogus virtual aids-to-navigation (AtoN). A 
+number of methods, with varying levels of complexity, have been proposed
+ to better secure AIS and, indeed, emerging AIS protocols will implement
+ some of these mechanisms. Nevertheless, little has been done to secure 
+the current standards, which will remain in use for some time. This 
+paper presents Protected AIS (pAIS), a demonstration of capability 
+implementation using public-key cryptography methods to address several 
+AIS security vulnerabilities, maintain backward compatibility, and be 
+able to interoperate with non-pAIS devices.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2020 June 01</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>Protected ais</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>www.transnav.eu</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="http://www.transnav.eu/Article_Protected_AIS:_A_Demonstration_of_Capability_Scheme_to_Provide_Authentication_and_Message_Integrity_Kessler,54,1002.html">http://www.transnav.eu/Article_Protected_AIS:_A_Demonstration_of_Capability_Scheme_to_Provide_Authentication_and_Message_Integrity_Kessler,54,1002.html</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>3/21/2024, 1:18:30 PM</td>
+					</tr>
+					<tr>
+					<th>Volume</th>
+						<td>14</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>279-286</td>
+					</tr>
+					<tr>
+					<th>Publication</th>
+						<td>TransNav, International Journal on Marine Navigation and Safety od Sea Transportation</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.12716/1001.14.02.02">10.12716/1001.14.02.02</a></td>
+					</tr>
+					<tr>
+					<th>Issue</th>
+						<td>2</td>
+					</tr>
+					<tr>
+					<th>Journal Abbr</th>
+						<td>TransNav Int. J. Mar. Navig. Saf. Sea Transp.</td>
+					</tr>
+					<tr>
+					<th>ISSN</th>
+						<td>2083-6473</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>3/21/2024, 1:18:30 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>3/21/2024, 1:56:49 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_D9WMNJBQ">Full Text PDF					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_WDSN3DI5" class="item journalArticle">
+			<h2>Secure AIS with identity-based authentication and encryption</h2>
+				<table>
+					<tbody><tr>
+						<th>Item Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Athanasios Goudosis</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Sokratis Katsikas</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>The Automatic Identification System (AIS) offers automatic 
+traffic control and collision avoidance services to the maritime 
+transportation sector worldwide. Because AIS lacks security mechanisms, 
+it is vulnerable to misuse and exploitation by unlawful adversaries 
+(e.g. sea-pirates, terrorists, smugglers). To address the security 
+issues of the AIS, in an earlier paper [1], we proposed the deployment 
+of a Maritime Certificate-less Identity-Based (mIBC) public-key 
+cryptography infrastructure that enhances AIS with on-demand anonymity, 
+authentication, and encryption capabilities. In this paper we address 
+implementation aspects of that infrastructure. In particular, we propose
+ to use the Sakai-Kasahara Identity-Based Encryption (IBE) approach to 
+implement the mIBC infrastructure, following the IEEE 1363.3-2013 
+standard for Identity-Based Cryptography.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2020 June 01</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>www.transnav.eu</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="http://www.transnav.eu/Article_Secure_AIS_with_Identity-Based_Authentication_and_Encryption_Goudosis,54,1003.html">http://www.transnav.eu/Article_Secure_AIS_with_Identity-Based_Authentication_and_Encryption_Goudosis,54,1003.html</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>3/21/2024, 1:17:11 PM</td>
+					</tr>
+					<tr>
+					<th>Volume</th>
+						<td>14</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>287-298</td>
+					</tr>
+					<tr>
+					<th>Publication</th>
+						<td>TransNav, International Journal on Marine Navigation and Safety od Sea Transportation</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.12716/1001.14.02.03">10.12716/1001.14.02.03</a></td>
+					</tr>
+					<tr>
+					<th>Issue</th>
+						<td>2</td>
+					</tr>
+					<tr>
+					<th>Journal Abbr</th>
+						<td>TransNav Int. J. Mar. Navig. Saf. Sea Transp.</td>
+					</tr>
+					<tr>
+					<th>ISSN</th>
+						<td>2083-6473</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>3/21/2024, 1:16:49 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>3/21/2024, 1:59:34 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_83QNQNHK">Full Text PDF					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_QQ8EHITM" class="item journalArticle">
+			<h2>Securing the automatic identification system (AIS): using public 
+key cryptography to prevent spoofing whilst retaining backwards 
+compatibility</h2>
+				<table>
+					<tbody><tr>
+						<th>Item Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Gareth Wimpenny</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Jan Šafář</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Alan Grant</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Martin Bransby</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>The civilian Automatic Identification System (AIS) has no 
+inherent protection against spoofing. Spoofed AIS messages have the 
+potential to interfere with the safe navigation of a vessel by, amongst 
+other approaches, spoofing maritime virtual aids to navigation and/or 
+differential global navigation satellite system (DGNSS) correction data 
+conveyed across it. Acting maliciously, a single transmitter may spoof 
+thousands of AIS messages per minute with the potential to cause 
+considerable nuisance; compromising information provided by AIS intended
+ to enhance the mariner's situational awareness. This work describes an 
+approach to authenticate AIS messages using public key cryptography 
+(PKC) and thus provide unequivocal evidence that AIS messages originate 
+from genuine sources and so can be trusted. Improvements to the proposed
+ AIS authentication scheme are identified which address a security 
+weakness and help avoid false positives to spoofing caused by changes to
+ message syntax. A channel loading investigation concludes that 
+sufficient bandwidth is available to routinely authenticate all AIS 
+messages whilst retaining backwards compatibility by carrying PKC 
+‘digital signatures’ in a separate VHF Data Exchange System (VDES) side 
+channel.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2022/03</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>Securing the automatic identification system (ais)</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>Cambridge University Press</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://www.cambridge.org/core/journals/journal-of-navigation/article/abs/securing-the-automatic-identification-system-ais-using-public-key-cryptography-to-prevent-spoofing-whilst-retaining-backwards-compatibility/98E18D3253AD985BA7B75185EFB3538A">https://www.cambridge.org/core/journals/journal-of-navigation/article/abs/securing-the-automatic-identification-system-ais-using-public-key-cryptography-to-prevent-spoofing-whilst-retaining-backwards-compatibility/98E18D3253AD985BA7B75185EFB3538A</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>3/21/2024, 1:14:09 PM</td>
+					</tr>
+					<tr>
+					<th>Volume</th>
+						<td>75</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>333-345</td>
+					</tr>
+					<tr>
+					<th>Publication</th>
+						<td>The Journal of Navigation</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1017/S0373463321000837">10.1017/S0373463321000837</a></td>
+					</tr>
+					<tr>
+					<th>Issue</th>
+						<td>2</td>
+					</tr>
+					<tr>
+					<th>ISSN</th>
+						<td>0373-4633, 1469-7785</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>3/21/2024, 1:14:09 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>3/21/2024, 1:57:24 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Spoofing</li>
+					<li>AIS</li>
+					<li>Authentication</li>
+					<li>VDES</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_KEPPURZG">Wimpenny et al. - 2022 - Securing the automatic identification system (AIS).pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_5EPAXG4P" class="item conferencePaper">
+			<h2>Space-based detection of spoofing AIS signals using doppler frequency</h2>
+				<table>
+					<tbody><tr>
+						<th>Item Type</th>
+						<td>Conference Paper</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Shanzeng Guo</td>
+					</tr>
+					<tr>
+						<th class="contributor">Contributor</th>
+						<td>Jerome J. Braun</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>The Automatic Identification System (AIS) is a self-reporting system based on VHF radio to transmit a vessel’s identity,
+position, speed, heading and other parameters to improve maritime domain awareness. However, AIS information can be
+programmatically spoofed by terrorists or other criminals, who often choose to masquerade as innocent civilians and
+exploit the vulnerabilities of military and civilian infrastructures for their purposes. Therefore, detecting and localizing a
+spoofing AIS ship become a critical and challenging issue for maritime security. This paper presents an algorithm to
+detect and geolocalize a spoofing AIS emitter using space-based AIS signals with its Doppler frequency. With an AIS
+signal sensor on a fast orbiting satellite, the measured AIS Doppler frequency of an AIS emitter can be used to define a
+double-napped cone of which the satellite is at its vertex and satellite velocity coincides with its axis, such that the
+theoretical Doppler frequency derived from the radial velocity to the AIS emitter matches the measured Doppler
+frequency. All such matches can only lie on either cone extending out from the satellite, which cuts the Earth’s surface
+in two curves, so we know that the AIS emitter must lie somewhere on these curves. Two such AIS Doppler frequency
+measurements for the same stationary AIS emitter produce two valid curves which intersect at the position of the AIS
+emitter. Multiple Doppler frequency measurements can be used to better estimate the position fix of an AIS emitter,
+hence determine the spoofing AIS ship if the estimated position fix unreasonably differs from the position carried in its
+AIS message. A set of formulas are derived which relate an AIS emitter position to its Doppler frequency measurements.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2014</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>csu-maritime.primo.exlibrisgroup.com</td>
+					</tr>
+					<tr>
+					<th>Extra</th>
+						<td>Book Title: Multisensor, Multisource Information Fusion: Architectures, Algorithms, and Applications 2014
+ISSN: 0277-786X</td>
+					</tr>
+					<tr>
+					<th>Volume</th>
+						<td>9121</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>SPIE</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-1-62841-058-7</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>912108–912108-6</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1117/12.2050448">10.1117/12.2050448</a></td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>3/21/2024, 1:06:45 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>3/21/2024, 1:57:35 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Artificial intelligence</li>
+					<li>Computer science</li>
+					<li>Spoofing attack</li>
+					<li>Automatic Identification System</li>
+					<li>Computer vision</li>
+					<li>Heading (navigation)</li>
+					<li>Maritime domain awareness</li>
+					<li>Neural and Evolutionary Computation</li>
+					<li>Position (vector)</li>
+					<li>Remote sensing</li>
+					<li>Robotics</li>
+					<li>Satellite</li>
+					<li>Signal</li>
+				</ul>
+				<h3 class="notes">Notes:</h3>
+				<ul class="notes">
+					<li id="item_G4ZNMNF5">
+<div><blockquote>DOI: 10.1117/12.2050448</blockquote></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_HFZT6ACI">Guo - 2014 - Space-based detection of spoofing AIS signals usin.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_KSJGFA6K" class="item journalArticle">
+			<h2>Towards a secure automatic identification system (AIS)</h2>
+				<table>
+					<tbody><tr>
+						<th>Item Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Athanassios Goudossis</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Sokratis K. Katsikas</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>The Automatic Identification System (AIS) is the emerging 
+system for automatic traffic control and collision avoidance services in
+ the maritime transportation sector. It is one of the cornerstone 
+systems for improved marine domain awareness and is embedded in 
+e-navigation, e-bridging, and autonomous ships proposals. However, AIS 
+has some security vulnerabilities that can be exploited to invade 
+privacy of passengers, to launch intentional collision attacks by 
+pirates and terrorists, etc. In this work, we explore how Identity-Based
+ Public Cryptography and Symmetric Cryptography may enhance the security
+ properties of the AIS.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2019-06-01</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>Springer Link</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://doi.org/10.1007/s00773-018-0561-3">https://doi.org/10.1007/s00773-018-0561-3</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>3/21/2024, 1:17:53 PM</td>
+					</tr>
+					<tr>
+					<th>Volume</th>
+						<td>24</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>410-423</td>
+					</tr>
+					<tr>
+					<th>Publication</th>
+						<td>Journal of Marine Science and Technology</td>
+					</tr>
+					<tr>
+					<th>DOI</th>
+						<td><a href="http://doi.org/10.1007/s00773-018-0561-3">10.1007/s00773-018-0561-3</a></td>
+					</tr>
+					<tr>
+					<th>Issue</th>
+						<td>2</td>
+					</tr>
+					<tr>
+					<th>Journal Abbr</th>
+						<td>J Mar Sci Technol</td>
+					</tr>
+					<tr>
+					<th>ISSN</th>
+						<td>1437-8213</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>3/21/2024, 1:17:53 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>3/21/2024, 1:17:53 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Automatic Identification System (AIS)</li>
+					<li>e-Navigation</li>
+					<li>Identity-based public cryptography</li>
+					<li>Maritime security</li>
+					<li>Symmetric cryptography</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_2DWL5A4I">Submitted Version					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_RW7MDLFF" class="item webpage">
+			<h2>What is spoofing? Your complete guide (+ 4 key AIS spoofing typologies)</h2>
+				<table>
+					<tbody><tr>
+						<th>Item Type</th>
+						<td>Web Page</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Jane Courtnell</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>02/10/2023</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://www.polestarglobal.com/resources/what-is-spoofing-your-complete-guide-4-key-ais-spoofing-typologies">https://www.polestarglobal.com/resources/what-is-spoofing-your-complete-guide-4-key-ais-spoofing-typologies</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>3/24/2024, 6:44:58 PM</td>
+					</tr>
+					<tr>
+					<th>Website Title</th>
+						<td>Pole Star</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>3/24/2024, 6:44:58 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>3/27/2024, 4:03:00 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_ZEYX7IZL">What Is Spoofing? Your Complete Guide (+ 4 Key AIS Spoofing Typologies)					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_ZFRM4Z3X" class="item webpage">
+			<h2>What is vessel identity laundering and why does it matter?</h2>
+				<table>
+					<tbody><tr>
+						<th>Item Type</th>
+						<td>Web Page</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Hila Sasson</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>Vessel identity laundering is becoming increasingly popular. Read our blog to learn how we detect this sophisticated practice.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2021-09-13T15:37:17+00:00</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en-US</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://windward.ai/blog/north-korean-sanctions-evasion-identity-laundering-explained/">https://windward.ai/blog/north-korean-sanctions-evasion-identity-laundering-explained/</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>3/24/2024, 6:45:43 PM</td>
+					</tr>
+					<tr>
+					<th>Website Title</th>
+						<td>Windward</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>3/24/2024, 6:45:43 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>3/24/2024, 6:45:43 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_AFM42HTN">Snapshot					</li>
+				</ul>
+			</li>
+
+		</ul>
+	
+</body></html>
