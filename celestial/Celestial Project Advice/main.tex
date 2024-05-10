@@ -2,7 +2,7 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage[margin=1in]{geometry}
 \usepackage[super]{nth}
-\usepackage[utf8x]{inputenc}
+\usepackage[utf8]{inputenc}
 \usepackage{xpatch}
 \usepackage[backend=biber, style=apa]{biblatex}
 \usepackage{amsmath}
@@ -70,9 +70,10 @@ For this guide to make sense (and for you to be on this cruise), you had to pass
     &\text{Hc}=\sin^{-1}{\cos{\text{L}}\cos{\text{d}}\cos{\text{LHA}}+\sin{\text{L}}\sin{\text{d}}}  &\text{\texttt{Height Computed}}\\
     &\text{Z}=\tan^{-1}{\frac{\sin{\text{LHA}}}{\cos{\text{Lat}\tan\text{{d}}-\sin{\text{L}}\cos{\text{LHA}}}}}   &\text{\texttt{Azimuth Angle}}\\
     &\text{MOO Corr}=\text{Run}\times\cos{(\text{Zn}-\text{CSE})}  &\text{\texttt{Motion of Observer}}\\
-    &\text{MOB Corr}=15.04\min\times\cos{(\text{L})}\sin{(\text{Zn})}   &\text{\texttt{Motion of Body}}
-    &\text{A}=\sin^{-1}
+    &\text{MOB Corr}=15.04'\times\text{T}\times\cos{(\text{L})}\sin{(\text{Zn})}   &\text{\texttt{Motion of Body}}\\
+    &\text{A}=\sin^{-1}\frac{\sin{\text{d}}}{\cos{\text{Lat}}}	&\text{\texttt{Amplitude of a Body on the Celestial Horizon (Ho 0)}}
 \end{align}
+Equations for Computer Altitude, Azimuth Angle, and Amplitude are from \citetitle{1bow}.
 \section{Scheduling}
 \subsection{Sight Planning}
 A not inconsiderable part of your celestial Routine will consist of creating sight plans for you and your fellow cadets. Live and die by these. Don't shoot a body that's not on your sight plan and identify it afterwards. Use the sight plan to set your alarm in the morning, remember to take your breaks during the day to take your sun lines at the optimal time, and stay awake long enough in the evening to make the morning sight plan and communicate it to your peers. Half a dozen otherwise competent and intelligent men I know failed their senior cruise in 2023 because they did not. You may find my detailed instructions for sight planning \hyperlink{https://www.csum.edu/tutoring/media/celnavjoey.pdf}{\textbf{HERE}}.
