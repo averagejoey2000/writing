@@ -7,7 +7,7 @@
 \usepackage[backend=biber, style=apa]{biblatex}
 \usepackage{amsmath}
 \usepackage{graphicx} % Required for inserting images
-\addbibresource{Sight Procedures.bib}
+\addbibresource{sources.bib}
 
 \title{Celestial Project Advice}
 \author{Joey Simone}
@@ -67,16 +67,23 @@ The instructors are strict on formatting. \begin{itemize}
 For this guide to make sense (and for you to be on this cruise), you had to pass Celestial Navigation class, so I will use the language with which I feel most comfortable. However, there are some distinctions between what I say and what you may have learned or what Pearson says. When I say Universal Time, that's Greenwich Mean Time; UT and GMT respectively. The modern Nautical Almanac gives all times in UT not GMT. I may say Ship Time or Local Time to mean Zone Time. Zone Time is respective only to geographic meridians; not to the ship, daylight savings time, or political boundaries. If you calculate the Zone Time of Begin Morning Nautical Twilight, you may not wake up at the right time because the time zone being observed on the ship is not always the time zone that your longitude indicates, so I say Local Time (LT). The formatting in the projects on the board in the Nav Lab use \texttt{Advance/Retard} but I write \texttt{Run} with a positive (+) run indicating that the ship has moved forward between the sight time and the desired fix time, or a negative (-) run indicates that the sight was taken after the desired fix time. I always move all of my lines to a convenient hour. Daytime running fixes should always yield a 1200 position, but since the twilight move around so much, I can't give a hard and fast rule that the AM fix is always at 0600 or something.
 
 \begin{align}
-    &\text{Hc}=\sin^{-1}{\cos{\text{L}}\cos{\text{d}}\cos{\text{LHA}}+\sin{\text{L}}\sin{\text{d}}}  &\text{\texttt{Height Computed}}\\
-    &\text{Z}=\tan^{-1}{\frac{\sin{\text{LHA}}}{\cos{\text{Lat}\tan\text{{d}}-\sin{\text{L}}\cos{\text{LHA}}}}}   &\text{\texttt{Azimuth Angle}}\\
-    &\text{MOO Corr}=\text{Run}\times\cos{(\text{Zn}-\text{CSE})}  &\text{\texttt{Motion of Observer}}\\
-    &\text{MOB Corr}=15.04'\times\text{T}\times\cos{(\text{L})}\sin{(\text{Zn})}   &\text{\texttt{Motion of Body}}\\
-    &\text{A}=\sin^{-1}\frac{\sin{\text{d}}}{\cos{\text{Lat}}}	&\text{\texttt{Amplitude of a Body on the Celestial Horizon (Ho 0)}}
+	\label{eq:Hc}\tag{Hc}	&\text{Hc}=\sin^{-1}{\cos{\text{L}}\cos{\text{d}}\cos{\text{LHA}}+\sin{\text{L}}\sin{\text{d}}}  &
+	\text{\texttt{Height Computed}}\\
+	\label{eq:Z}\tag{Z}	   &\text{Z}=\tan^{-1}{\frac{\sin{\text{LHA}}}{\cos{\text{Lat}\tan\text{{d}}-\sin{\text{L}}\cos{\text{LHA}}}}}   &\text{\texttt{Azimuth Angle}}\\
+   \label{eq:MOO}\tag{MOO} &\Delta\text{h}=\text{Run}\times\cos{(\text{Zn}-\text{CSE})}  &\text{\texttt{Motion of Observer}}\\
+  %  &\text{MOB Corr}=15.04'\times\text{T}\times\cos{(\text{L})}\sin{(\text{Zn})}   &\text{\texttt{Motion of Body}}\\
+  \label{eq:amp}\tag{Amplitude}&\text{A}=\sin^{-1}\frac{\sin{\text{d}}}{\cos{\text{Lat}}}	&\text{\texttt{Amplitude}}
 \end{align}
-Equations for Computer Altitude, Azimuth Angle, and Amplitude are from \citetitle{1bow}.
+\ref{eq:amp}, \ref{eq:Z} and \ref{eq:Hc} are all from \citetitle{2bow}.
+\ref{eq:MOO} is given in \citetitle{ho249}.
 \section{Scheduling}
 \subsection{Sight Planning}
-A not inconsiderable part of your celestial Routine will consist of creating sight plans for you and your fellow cadets. Live and die by these. Don't shoot a body that's not on your sight plan and identify it afterwards. Use the sight plan to set your alarm in the morning, remember to take your breaks during the day to take your sun lines at the optimal time, and stay awake long enough in the evening to make the morning sight plan and communicate it to your peers. Half a dozen otherwise competent and intelligent men I know failed their senior cruise in 2023 because they did not. You may find my detailed instructions for sight planning \hyperlink{https://www.csum.edu/tutoring/media/celnavjoey.pdf}{\textbf{HERE}}.
+A not inconsiderable part of your celestial Routine will consist of creating sight plans for you and your fellow cadets.
+ Live and die by these.
+ Don't shoot a body that's not on your sight plan and identify it afterwards.
+ Use the sight plan to set your alarm in the morning, remember to take your breaks during the day to take your sun lines at the optimal time, and stay awake long enough in the evening to make the morning sight plan and communicate it to your peers.
+ Half a dozen otherwise competent and intelligent men I know failed their senior cruise in 2023 because they did not.
+ You may find my detailed instructions for sight planning \hyperlink{https://www.csum.edu/tutoring/media/celnavjoey.pdf}{\textbf{HERE}}.\footfullcite{simone_operational_2024}.
 \subsection{Your Routine}
 There are a few celestial events that happen each day, and if you want to finish the project quickly or stack up extra credit, you can try to observe as many of them as you can. Of course, no time numbers here because the times of these events is the definition of Ephemeris. You are a senior, which grants you some right and liberties, but unfortunately you are a senior, which requires some duties. Observe which of these you can. If you have day work you're allowed to take a break to whip out the sextant and take observations. If you're on watch, you are required to take observations, don't forget to take a picture with your phone to give to submit to the teacher or to copy your work for later. If you're in the classroom or the simulator or practical training, the breaks might not line up with when star stuff is happening. You will have many days to catch all of it, especially on the long Pacific passage.
 \begin{enumerate}
