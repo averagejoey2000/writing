@@ -1,4 +1,5 @@
 \documentclass[letterpaper,12pt]{article}
+\usepackage{textcomp}
 \usepackage[hidelinks]{hyperref}
 \usepackage[margin=1in]{geometry}
 \usepackage[super]{nth}
@@ -116,7 +117,17 @@ You will have many days to catch all of it, especially on the long Pacific passa
 The instructor and the LWOs will cover with you how to adjust your instrument for error, record non adjustable error, and even possibly how to shoot a body.
 Here are some tips that may not be covered or may not be obvious for helping improve your efficiency, especially by yourself.
 
-When adjusting error out of your sextant, the goal is that when the arm and micrometer are set to 00\deg00.0',that when you look through the scope, the image is unbroken and not distorted, much like through a telescope. 
+When adjusting error out of your sextant, the goal is that when the arm and micrometer are set to 00\textdegree00.0',that when you look through the scope, the image is unbroken and not distorted, much like through a telescope. 
+\footnote{More detailed instructions for removing and diagnosing sextant error can be found in Bowditch 1 page 272.}
+Once you've removed the adjustable error, you may think that your index error is zero, but it is not.
+Set the sextant to 5 degrees and look through the sight. Use the micrometer drum to walk the scope down until the sextant appears unbroken.
+Read the altitude on the index arm and the result is your true index error.
+Detailed and useful instructions for reading the sextant are to be found in Bowditch 1.
+You may have a negative value of altitude, meaning your index error is \emph{Off The Arc}.
+In this case, "Negative readings [\ldots] are made in the same manner as positive readings; the various figures are added algebraically. 
+Thus, if the three parts of a micrometer drum reading are \((-)1\deg{}+56'+.3'=(-)3.7'\)."\parencite[p 269]{1bow}.
+If your altitude is positive, this is your index error and it is \emph{On The Arc}, and it is subtracted from all sights.
+It helps me to conceive as the index correction as the offset to apply to shoot altitude -0-.
 \section{Sight Reduction}
 \subsection{Azimuth}
 \subsection{Fix}
