@@ -1,4 +1,5 @@
 \documentclass[letterpaper,12pt]{article}
+\usepackage[nointegrals]{wasysym}
 \usepackage{gensymb}
 \usepackage{textcomp}
 \usepackage[hidelinks]{hyperref}
@@ -34,7 +35,7 @@ For the project itself, the self directed work is as follows:
         \hline
         Morning 3 Star Fix x2 & Azimuth of the Sun x3\footnotemark{} & Lat by LAN\\
         Evening 3 Star Fix x2 & Azimuth of Polaris & Lat by Polaris \\
-        3 Sun Fix x3 & Azimuth of something other than Sun or Polaris & \\
+        3 Sun Fix x3 & Azimuth other than Sun or Polaris & \\
         \hline
     \end{tabular}
     \caption{Required Submissions for Independent Work}
@@ -100,18 +101,37 @@ If you're in the classroom or the simulator or practical training, the breaks mi
 You will have many days to catch all of it, especially on the long Pacific passage.
 \begin{enumerate}
 \item During True Night Time, only azimuths are possible.
-    \item \texttt{Begin Morning Nautical Twilight. AM Star Time Begins. Take a fix using 3 different stars for lines of position.} If one of them is Polaris, then this submission checks off your requirement for a Polaris LOP.
-    \item \texttt{Begin Morning Civil Twilight. AM Star Time Ends, only planets remain visible after this time.} Stars get harder to see, but the horizon becomes easier to sight.
-    \item \texttt{Sunrise.} At such a low altitude, it is important to take the barometer and temperature corrections for the sun if you choose to sight it, and you can even get an LOP without a sextant by marking the time that the upper limb breaches the horizon or that the lower limb stops touching the water. Enter \(\text{Hs}=0, \text{IC}=0\). Within a few minutes of Sunrise, the center of the Sun will be at the Celestial Equator, or about 1 Sun above the horizon. Use the Gunsight of the Azimuth Circle to take an Amplitude of the Sun.
-    \item Daytime. Use the Mirror of the Azimuth Circle to take an Az Sun at any time. The procedure for bridge azimuths will be expanded on in Subsection \ref{doubleget}. Before LAN\footnote{an amount of time you can estimate with the rules in my Sight Planning Guide} take an altitude of the Sun for a single LOP, record the information for later, save the calculation until after the PM sun line.
-    \item \texttt{LAN.} I warn you now about Daylight Savings Time. On my freshman cruise I stepped out on the deck a whole hour early because I forgot about DST.
+\item \texttt{Begin Morning Nautical Twilight.}
+AM Star Time Begins.
+Take a fix using 3 different stars for lines of position.
+If one of them is Polaris, then this submission checks off your requirement for a Polaris LOP.
+\item \texttt{Begin Morning Civil Twilight.}
+AM Star Time Ends, only planets remain visible after this time.
+Stars get harder to see, but the horizon becomes easier to sight.
+    \item \texttt{Sunrise.}
+	    At such a low altitude, it is important to take the barometer and temperature corrections for the sun if you choose to sight it, and you can even get an LOP without a sextant by marking the time that the upper limb breaches the horizon or that the lower limb stops touching the water.
+	    Enter \(\text{Hs}=0, \text{IC}=0\).
+	    Within a few minutes of Sunrise, the center of the Sun will be at the Celestial Equator, or about 1 Sun above the horizon.
+	    Use the Gunsight of the Azimuth Circle to take an Amplitude of the Sun.
+    \item Daytime.
+	    Use the Mirror of the Azimuth Circle to take an Az Sun at any time.
+	    The procedure for bridge azimuths will be expanded on in Subsection \ref{doubleget}.
+	    Before LAN\footnote{an amount of time you can estimate with the rules in my Sight Planning Guide} take an altitude of the Sun for a single LOP, record the information for later, save the calculation until after the PM sun line.
+    \item \texttt{LAN.}
+	    I warn you now about Daylight Savings Time.
+	    On my freshman cruise I stepped out on the deck a whole hour early because I forgot about DST.
 	    We were not observing zone time, we were observing ship time, and the sun kept getting higher and higher until it stopped at 1300 on the dot.
 	    Sun Sun Sun fixes are not counted unless they include a Lat by LAN, but this can be substituted with an Ex-Meridian.
     \item In the Afternoon, you can do the same thing as the morning and take a mirror azimuth or a Sun LOP.
 	    Maybe you'll get lucky and shoot the moon during the day to have a 4th LOP.
-    \item \texttt{Sunset. Observe amplitude. Planets Available.}
-    \item \texttt{End Evening Civil Twilight. Star time begins. Observe 3 star fix.}
-    \item \texttt{End Evening Nautical Twilight. Star time ends when the ocean is too dark to see in the sextant.} 
+    \item \texttt{Sunset.
+	    Observe amplitude.
+    Planets Available.}
+    \item \texttt{End Evening Civil Twilight.
+	    Star time begins.
+    Observe 3 star fix.}
+\item \texttt{End Evening Nautical Twilight.}
+Star time ends when the ocean is too dark to see in the sextant. 
     \item \texttt{Night Time, azimuths only.}
 \end{enumerate}
 \section{Taking Sights}
@@ -130,7 +150,60 @@ Thus, if the three parts of a micrometer drum reading are \((-)1\degree{}+56'+.3
 If your altitude is positive, this is your index error and it is \emph{On The Arc}, and it is subtracted from all sights.
 It helps me to conceive as the index correction as the offset to apply to shoot altitude -0-.
 \section{Sight Reduction}
+\subsection{Time}
+Some thought must be given into how you record the time for sights.
+I make my observations in UT (universal time, or GMT), and I convert to ship time afterwards.
+I have a two time-zone watch so switching is easy, and I keep that second time zone synced by heading to the radio room to listen to the time tick, or using the time on the ECDIS.
+To take the time of an observation, I have a few principal strategies.
+These are from some advice I've given on Facebook, so these will have a more conversational tone than the rest of this manual.
+\subsubsection*{Manual Solo}
+I turn my watch to face the inside of my wrist, keep constantly adjusting the instrument to keep the body on target, say mark and look at the wristwatch.
+I say the seconds out loud, then the hour and minute.
+"Shooting the lower limb of the sun, steady steady steady mark twenty two. UT time 17 46 22."
+I write the time in my pocket notebook, if I'm getting an LOP I'll then inspect the sextant arc and micrometer for Hs.
+For an azimuth, I'll keep the body sighted or keep the compass illuminated until I see the reading.
+I say mark when I see the number and I'm sure, and then look at the watch.
+\subsubsection*{Two Player Method}
+The two player method is to have someone hold your watch and they mark the time when you call it. Requires a buddy.
+\subsubsection*{Stopwatch Method}
+this method is very good. I have a sports stopwatch with laps and splits, so if I start the watch at the top of the hour (sync to tick or to ship chronometer or GPS clock) I can push the button once for each sight. In split mode, starting at 1800, I might have
 
+\bigskip
+
+\begin{centering}
+\begin{tabular}{|c|c|}
+	\hline
+	Split & Time \\
+	\hline
+	1& 07:42.3 \\
+	\hline
+	2& 10:03.8 \\
+	\hline
+	3& 14:31.0 \\
+	\hline
+\end{tabular}\\
+\bigskip
+
+Meaning 180742, 181004 and 181431 respectively.
+The lap mode is less useful, but the same numbers would be
+
+\bigskip
+\begin{tabular}{|c|c|}
+	\hline
+	Lap & Time \\
+	\hline
+	1& 07:42.3 \\
+	\hline
+	2& 02:21.5 \\
+	\hline
+	3& 04:27.2 \\
+	\hline
+\end{tabular}\\
+\end{centering}
+
+\bigskip
+
+Which is less convenient than having the minutes and seconds read to you directly off of the face of the watch, but the addition of the times is not so bad.
 \subsection{Azimuth}
 The most important piece of equipment for your azimuth observations is the gyrocompass repeater. The bridge wings, the nav lab wings, and the 4 on the roof of the nav lab are suitable for use.
 It's not good to use the standard magnetic compass.
@@ -144,8 +217,29 @@ Once the body is sighted, look down a little at the mirror below the metal loop.
 There will be an indicator showing you the gyro azimuth of the body.
 For stars and planets, use the telescope attachment.
 \subsection{Fix}
+\subsubsection*{Advanced method for 3 star fix}
+Evening civil twilight begins at 1840 ship time, desire 1900 fix.
+Requires pub 249 (sight reduction table for air navigation). 
+\begin{enumerate} \item Take a stop watch with a repeating timer function (every 4 minutes and 0 seconds, beep and then restart the timer).
+\item At 1840, start the timer so it beeps at \texttt{1848, 1848, 1852, 1856, and, 1900,}
+\item When the watch beeps at 1844, record UT base.
+\item By 1848, be outside and identifying your bodies.
+\item Observe Star 1 and keep it on the horizon until the watch beeps at 1852. Record Hs1
+\item Observe Star 2 and keep it on the horizon until the watch beeps at 1856. Record Hs2
+\item Observe Star 3 and keep it on the horizon until the watch beeps at 1900. Record Hs3
+\item Go inside and stop your watch.
+\item Sight time is UT base +4x minutes. T\textsubscript{1} is Base Time +8 minutes, T\textsubscript{2} is Base Time +12 minutes, T\textsubscript{3} is Base Time +16 minutes.
+\item Calculate the LHA of Aries, establish an AP on the plotting sheet.
+\item Use the MOO and MOB tables to adjust the HC of the bodies used for sights 1 and 2, and the correction for sight 3 is zero.
+\item Because the earth turns at 1\textdegree{} per 4 minutes, LHA\aries{} increases 1\textdegree{} between shots, so AP longitude stays the same.
+\end{enumerate}
+All 3 lines of position are then run out from the same AP, with no need to advance the AP for ship run or time because of the corrections from tables 1 and 2 of the pub 249.
+With some effort, the corrections can be applied to Hc in advance, so I spent a part of my lunch break doing my sight plan and finding the adjusted precomputed Hc of all 3 stars, so when I shot my last star at 1900, I came back in the house, corrected Hs to Ho 3 times, and had my 3 star 1900 fix on the plotting sheet by 1915.
+The time burden is the same, but I felt cool.
+
 \subsection{Bridge Watch}
 \subsubsection{Azimuth} \label{doubleget}
 \subsubsection{Fix}
+\clearpage
 \printbibliography
 \end{document}
