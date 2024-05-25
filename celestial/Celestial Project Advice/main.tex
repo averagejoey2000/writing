@@ -1,4 +1,6 @@
 \documentclass[letterpaper,12pt]{article}
+\usepackage[super]{nth}
+\usepackage[english]{babel}
 \usepackage{multicol}
 \usepackage{mdframed}
 \usepackage[nointegrals]{wasysym}
@@ -9,8 +11,10 @@
 \usepackage[super]{nth}
 \usepackage[utf8]{inputenc}
 \usepackage{xpatch}
+\usepackage [autostyle, english = american]{csquotes}
+\MakeOuterQuote{"}
 \usepackage[backend=biber, style=apa]{biblatex}
-\usepackage{amsmath}
+\usepackage{amsmath,amssymb,amsthm,amsfonts}
 \usepackage{graphicx} % Required for inserting images
 \usepackage{color}
 \setlength{\columnseprule}{1pt}
@@ -92,8 +96,8 @@ For this guide to make sense (and for you to be on this cruise), you had to pass
 \ref{eq:Z} and \ref{eq:Hc} from Bowditch Volume 2 page 235 \svolcite{2}[p 235]{Bowditch}.
 \ref{eq:MOO} is given in Ho 249\footcite{ho249}.
 
-\noindent Z Keystrokes: \keystroke{RCL}\keystroke{3}\keystroke{SIN}\keystroke{\textdiv}\keystroke{(}\keystroke{RCL}\keystroke{1}\keystroke{COS}\keystroke{\texttimes}\keystroke{RCL}\keystroke{2}\keystroke{TAN}\keystroke{\textminus}\keystroke{RCL}\keystroke{1}\keystroke{SIN}\keystroke{\texttimes}\keystroke{RCL}\keystroke{3}\keystroke{COS}\keystroke{)}\keystroke{=}\keystroke{2nd}\keystroke{TAN}\\
-\noindent Hc Keystrokes: \keystroke{RCL}\keystroke{1}\keystroke{COS}\keystroke{\texttimes}\keystroke{RCL}\keystroke{2}\keystroke{COS}\keystroke{\texttimes}\keystroke{RCL}\keystroke{3}\keystroke{COS}\keystroke{+}\keystroke{RCL}\keystroke{1}\keystroke{SIN}\keystroke{\texttimes}\keystroke{RCL}\keystroke{2}\keystroke{SIN}\keystroke{=}\keystroke{2nd}\keystroke{SIN}
+\noindent Z Keystrokes: \keystroke{RCL}\keystroke{3}\keystroke{SIN}\keystroke{\textdiv}\keystroke{(}\keystroke{RCL}\keystroke{1}\keystroke{COS}\keystroke{\texttimes}\keystroke{RCL}\keystroke{2}\keystroke{TAN}\keystroke{\textminus}\keystroke{RCL}\keystroke{1}\keystroke{SIN}\keystroke{\texttimes}\keystroke{RCL}\keystroke{3}\keystroke{COS}\keystroke{)}\keystroke{=}\keystroke{\nth{2}}\keystroke{TAN}\\
+\noindent Hc Keystrokes: \keystroke{RCL}\keystroke{1}\keystroke{COS}\keystroke{\texttimes}\keystroke{RCL}\keystroke{2}\keystroke{COS}\keystroke{\texttimes}\keystroke{RCL}\keystroke{3}\keystroke{COS}\keystroke{+}\keystroke{RCL}\keystroke{1}\keystroke{SIN}\keystroke{\texttimes}\keystroke{RCL}\keystroke{2}\keystroke{SIN}\keystroke{=}\keystroke{\nth{2}}\keystroke{SIN}
 \section{Scheduling}
 \subsection{Sight Planning}
 A not inconsiderable part of your celestial Routine will consist of creating sight plans for you and your fellow cadets.
@@ -135,7 +139,7 @@ Stars get harder to see, but the horizon becomes easier to sight.
 	    We were not observing zone time, we were observing ship time, and the sun kept getting higher and higher until it stopped at 1300 on the dot.
 	    Sun Sun Sun fixes are not counted unless they include a Lat by LAN, but this can be substituted with an Ex-Meridian.
     \item In the Afternoon, you can do the same thing as the morning and take a mirror azimuth or a Sun LOP.
-	    Maybe you'll get lucky and shoot the moon during the day to have a 4th LOP.
+	    Maybe you'll get lucky and shoot the moon during the day to have a \nth{4} LOP.
     \item \texttt{Sunset.
 	    Observe amplitude.
     Planets Available.}
@@ -328,6 +332,90 @@ The most common source of error in a sun running fix is incorrect compensation f
 Usually the most satisfactory information is in the 0800 POSN slip, regarding the 0800 DR information to plot from, the CSE and SPD of the ship, to be used for advancing and retarding your lines of position. You are free to do it graphically, but the sun running fix becomes a lot easier with the equation for \ref{eq:MOO}.
 \subsubsection*{Star Fix}
 Star identification is a common stumbling block for those beginning celestial.
+In the celestial class, you learned that if you observe an unidentified star and its bearing simultaneously, that you can identify it.
+\emph{Do not do this.}
+Shooting a random star does not guarantee that you have observed one of the Major Navigational Stars, or even one of the minor stars in the same constellation.
+The margin for error for starfinders is greater than the tolerance permitted.
+It is better to know what body you intend to shoot, least of all because choosing stars at random in the sky also does not mean that you will have a good crossing angle between your LOPs.
+You don't have to think about star maps if you are a good hand with the precomputation of the altitudes and relative bearings of the stars and planets you will see on any given morning or evening.
+However, knowing some constellations is better than none for the nights where it is easy to misidentify a star, or shoot the wrong star in a constellation.
+Thankfully, there are resources available to us.
+Pages 266 and 267 of the Nautical Almanac have 4 "Star Charts" which show some projections with dotted lines connecting stars in some of the more famous and useful constellations, as well as the names and Bayer designations of those stars.\parencite{unitedkingdromhydrographicofficeNauticalAlmanac20242023}.
+The use of these charts is often unintuitive, and because most star charts are meant to represent a view with the chart being held above the navigator's head while they look up, many people will get their left and right confused. 
+An exercise that I practiced when making my sight plans was to draw the constellation that contained a star mentioned in my sight plan, so that when I go outside, I know
+"Okay. I need to find the Whale `Cetus' which to me looks kinda like the lamp from Aladdin.
+His right flipper is Menkar ($\alpha$, so it's brighter) but I want Diphda, the whale's chin, which is $\beta$"
+
+Other Star Charts exist. The Nav Lab has a very large one on the wall by the cork board, and it is worth studying, as between the constellations there are arrows, clues, and mnemonics; how a navigator can find a constellation if they see a familiar one, how to avoid confusing two similar groupings, etc. 
+Also take a look at the charts in the Navigational Astronomy section of Bowditch, pp. 256-257 in Vol 1, 2019 ed.
+
+Once you know what time you need to be shooting, about where the stars you must shoot are, and you're outside with a pen, pocket notebook, red flashlight, and sextant, you will need to act quickly.
+Twilight lasts much longer at higher latitudes, but the Bear likes to steam through the Tropics much more than the Poles.
+Therefore, usually you will have no longer than 20 minutes between BMNT and BMCT, or between EECT and EENT.
+In the mornings, you will lose stars in the east first. In the evenings you will gain stars in the east first.
+Shoot stars in order from east to west, and when you are new you'll want to take multiple readings of each.
+Bowditch espouses taking many redundant sights to reduce error and increase certainty.
+\begin{quotation}
+It is preferable to take observations in a round-robin fashion when taking sights of more than one body at a session.
+Taking consecutive observations of different bodies helps assure that all the bodies are observed at least once should a sudden change in weather put an end to the observation of one or more bodies.
+Taking non-consecutive observations of a body helps to remove systematic errors in its observations by adding a randomizing factor to the sight taking.
+Taking sights of more than two bodies can significantly reduce the random error of a fix just as taking more than a single observation can reduce the random error in an LOP.
+
+There are two parameters to be determined, latitude and longitude, involved in a fix.
+So the random error of a fix is reduced by the square root of the number of sights minus two.
+Determining a fix from five or six sights is about optimum to reduce the random error in a fix.
+
+By averaging a number of observations into a single sight and then combining it with other sights into a single fix, the navigator can significantly reduce the uncertainty of the vessel’s position.
+The difference of a course of advance and the track made good for a running fix results in a less accurate fix than one made from taking sights of two bodies at a single observing session.
+The best method for reducing error in a running fix is to average together multiple observations, particularly those of the latter observing session, to improve the accuracy of the LOP. \pvolcite{2}[p. 311]{Bowditch} 
+\end{quotation}
+
+Say you or a friend makes this sight plan (See Table \ref{tab:digitzed example}):
+\begin{table}[hb]
+    \centering
+ June 26 AM Sight Plan\\
+    ZD=+9, CSE 042, SPD 15.2,
+    Reckoned from 25 Jun 2023, 2000 POSN SLIP\\
+    UT BMNT 1342, LT BMNT 0442, 0442 DR Posn: L$31\degree\ 26.4'\text{N}, \lambda146\degree\ 43'$W\\
+    \begin{tabular}{|cl|cc|}
+        \hline
+        Symbol & Name & Hc & Zn \\
+        \hline
+        $\blacklozenge$  & Mirfak & $30\degree16'$ & 047\\
+        $\blacklozenge$ & FOMALHAUT & $28\degree29'$ & 168 \\
+        $\blacklozenge$  & VEGA & $46\degree01'$ & 295 \\
+        $\star$ & Hamal & $37\degree31'$ & 083 \\
+        $\star$ & Diphda & $28\degree54'$ & 138 \\
+        $\star$ & ALTAIR & $50\degree41'$ & 243 \\
+        $\star$  & Kochab & $24\degree25'$ & 344 \\
+        \rightmoon & MOON & NOT & AVAILABLE \\ 
+        \venus  & VENUS & NOT & AVAILABLE \\ 
+        \mars  & MARS & NOT & AVAILABLE \\ 
+        \jupiter  & JUPITER & $30\degree$ & 090 \\
+        \saturn  & SATURN & $48\degree$ & 171 \\ \hline
+    \end{tabular}
+    \caption{Created from a real sight plan I made on the TSGB}
+    \label{tab:digitzed example}
+\end{table}
+
+If you decide to shoot only the 3 selected stars at the top, then I would recommend this:
+Go out on deck with the sextant at 0430 to let your eyes adjust. 
+At 0440, start trying to make out Mirfak, in the constellation Perseus, in the spot that you think is his groin.
+You try to sight it, but the horizon is still too dim to see in that spot.
+You already know where VEGA is, because it's so close to Cygnus the Swan, which is really easy to spot.
+While you wait for Nautical Twilight to give you enough horizon to accurately sight Mirfak, you try pick out FOMALHAUT, and note that it's the fish's nose.
+You turn back to the east and your eyes can start to see where the black ocean is beginning to separate from the deep dark blue sky, you set your sextant to 30\textdegree{} and start to sweep the horizon to the Northeast to find Mirfak.
+You spot it, adjust the micrometer to get the center of the star on the horizon, and mark the time and Altitude.
+A you sight FOMALHAUT just before a small cloud passes in front of it, and you record the time and altitude.
+You zero the sextant, look at Cygnus and come over to VEGA, which is painfully bright.
+You pull VEGA down to the water and mark the time and the altitude.
+You sight Mirfak again, FOMALHAUT again, VEGA again.
+Repeat one more time but FOMALHAUT is gone for sure.
+
+The Horizon turns golden as the stars wink out and become harder to see, VEGA is the last one to leave.
+When you go inside to check your notes and start your calculations, you find that your second observation of Mirfak is different from the \nth{1} and \nth{3} by about 9 degrees, so you discard that sight.
+You decide which three LOPs you want to plot, reduce Hs to Ho, convert time to Hc and Zn, run all 3 observations to 0500, enclose and label the fix, and submit the papers.
+You grab a shower before heading to breakfast, then formation.
 
 \subsubsection*{Advanced method for 3 star fix}
 Evening civil twilight begins at 1840 ship time, desire 1900 fix.
