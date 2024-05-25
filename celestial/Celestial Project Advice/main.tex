@@ -239,6 +239,18 @@ This means you do not need to record the ship's heading at the same time that yo
 Simply observe the body of your choice and record the gyro bearing and the time.
 Find the DR Lat and Lon with the most recent POSN slip and the mid lat sailing, then use \ref{eq:Z} to get true bearing, and submit determine GE.
 Remember these rules:
+\begin{enumerate}
+	\item If the Observer is in the North, Z is prefixed N.
+	\item If the Observer is in the South, Z is prefixed S.
+	\item If LHA $>$ 180, Z is Suffixed E.
+	\item If LHA $<$ 180, Z is Suffixed W.
+\end{enumerate}
+\begin{align*}
+	\text{Z NE};&		&\text{Zn}&=Z\\
+	\text{Z NW};&		&\text{Zn}&=360-Z\\
+	\text{Z SW};&		&\text{Zn}&=180-Z\\
+	\text{Z SE};&		&\text{Zn}&=180-Z\\
+\end{align*}
 \subsection{Fix}
 \subsubsection*{Advanced method for 3 star fix}
 Evening civil twilight begins at 1840 ship time, desire 1900 fix.
@@ -261,13 +273,36 @@ With some effort, the corrections can be applied to Hc in advance, so I spent a 
 The time burden is the same, but I felt cool.
 
 \subsection{Bridge Watch}
-\subsubsection{Azimuth} \label{doubleget}
-\begin{figure}[htpb]
+\begin{figure}[htbp]
 	\centering
-	\includegraphics[width=0.8\textwidth]{static/getgettvmdc.png}
+	\includegraphics[width=0.8\textwidth]{static/getgettvmdc.drawio.png}
 	\caption{A common way to organize the calculations for calculating Gyrocompass Error, Variation and Deviation of the Standard Compass, as required for all watches.}
 	\label{fig:getget}
 \end{figure}
+\clearpage
+\subsubsection{Azimuth} \label{doubleget}
+It is important to get into a good routine for taking an Azimuth on your bridge watch.
+The CWO is required to complete one on all watches on the Bear, and azimuths are some of the only practical industry celestial.
+You are required to log information in the Ship's Log and the Compass Observation book.
+The Ship's log wants the gyro course, standard course, GE, VAR, and DEV, True Heading, and the CWO's signature.
+The Compass record book wants time, date, Lat, Lon, gyro CSE, standard CSE, gyro bearing, true bearing, GE, VAR, and DEV, True Heading, repeater used, and the CWO's initials.
+To successfully complete your azimuth, you need 4 pieces of information simultaneously.
+\begin{enumerate}
+	\item Ship's Position
+	\item Time (UT and LT) of Observation
+	\item Observed Bearing
+	\item Ship's Heading (Steering and Checking)
+\end{enumerate}
+Information on the ship's heading can always be had by asking the helmsman what they are steering and checking, and if they are any good they will still be on mostly the same course when you ask as when you were when you made the observation.
+You may ask your BTM to record the Ship's Position off the GPS at the moment you take your observation, but if you do that, he can't be standing next to your to hold your wristwatch.
+At the very least, you have to make the shot yourself.
+If you know the ECDIS logbook frequency, you can kill birds 1 and 2 (and half of bird 4) by timing your shot to land on a time that the ECDIS records information, like at the top of the hour, as that ECDIS log entry will have Lat, Lon, Gyro Head, and (zone and Greenwich) time.
+You still must observe your shot and ask the helmsman what she is checking.
+As far as calculating GE and DEV, consider the format in Figure \ref{fig:getget}.
+Fill in the steering and checking headings as reported by the helmsman, the observed gyro bearing you saw, and the variation off the chart.
+Use the \ref{eq:Z} Equation to get Azimuth Angle, convert to true bearing, and find the Gyro Error.
+Apply the Gyro Error to the Gyro Heading to get True Course. 
+True Course \textsuperscript{+W}\textsubscript{-E} Variation = Magnetic Heading, and the difference between magnetic and standard headings is the deviation.
 \subsubsection{Fix}
 The important thing to note about taking Celestial Fixes on your navigational watch is the use of the communal plotting sheet.
 This is in some ways easier, because you no longer have to set up your longitude lines on your own and you have a trackline.
