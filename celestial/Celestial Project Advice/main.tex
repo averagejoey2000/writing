@@ -1,4 +1,6 @@
 \documentclass[letterpaper,12pt]{article}
+\usepackage{multicol}
+\usepackage{mdframed}
 \usepackage[nointegrals]{wasysym}
 \usepackage{gensymb}
 \usepackage{textcomp}
@@ -10,12 +12,17 @@
 \usepackage[backend=biber, style=apa]{biblatex}
 \usepackage{amsmath}
 \usepackage{graphicx} % Required for inserting images
+\usepackage{color}
+\setlength{\columnseprule}{1pt}
+\def\columnseprulecolor{\color{blue}}
+
 \addbibresource{sources.bib}
 
 \title{Celestial Project Advice}
 \author{Joey Simone}
 \date{April 2024}
 
+\input{citephoto.tex}
 \begin{document}
 
 \maketitle
@@ -238,24 +245,35 @@ You are only required to find gyro error.
 This means you do not need to record the ship's heading at the same time that you take the gyro bearing, you do not need the local variation, you don't need the steering and checking information from the helmsman, and more tolerance is given to DR position.
 Simply observe the body of your choice and record the gyro bearing and the time.
 Find the DR Lat and Lon with the most recent POSN slip and the mid lat sailing, then use \ref{eq:Z} to get true bearing, and submit determine GE.
-Remember these rules:
+
+\begin{mdframed}
+	\centering
+\textbf{Rules for Converting Z to Zn}
+\flushleft
+\begin{minipage}{0.5\textwidth}
+%\vspace{1cm}
 \begin{enumerate}
 	\item If the Observer is in the North, Z is prefixed N.
 	\item If the Observer is in the South, Z is prefixed S.
 	\item If LHA $>$ 180, Z is Suffixed E.
 	\item If LHA $<$ 180, Z is Suffixed W.
 \end{enumerate}
+\end{minipage}
+\hspace{.05\textwidth}
+\begin{minipage}{0.4\textwidth}
 \begin{align*}
 	\text{Z NE};&		&\text{Zn}&=Z\\
 	\text{Z NW};&		&\text{Zn}&=360-Z\\
 	\text{Z SW};&		&\text{Zn}&=180-Z\\
 	\text{Z SE};&		&\text{Zn}&=180-Z\\
 \end{align*}
+\end{minipage}
+\end{mdframed}
 \newpage
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.8\textwidth]{static/nav1.jpg}
-	\caption{``In order to ensure that you are bringing the sun directly down to the horizon, the navigator needs to “swing the arc.” This means gently rocking the sextant back and forth. As you do this, the sun will appear to describe an arc in the sky. The sight is taken when the sun is at the lowest point of its arc and rests on the horizon.``\citephoto{navigator_celestial_2019}}
+	\caption{``In order to ensure that you are bringing the sun directly down to the horizon, the navigator needs to “swing the arc.” This means gently rocking the sextant back and forth. As you do this, the sun will appear to describe an arc in the sky. The sight is taken when the sun is at the lowest point of its arc and rests on the horizon.''\citephoto{navigator_celestial_2019}}
 	\label{fig:swingarc}
 \end{figure}
 \subsection{Fix}
