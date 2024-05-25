@@ -23,6 +23,7 @@
 \date{April 2024}
 
 \input{citephoto.tex}
+\input{keystroke.tex}
 \begin{document}
 
 \maketitle
@@ -90,6 +91,9 @@ For this guide to make sense (and for you to be on this cruise), you had to pass
 \ref{eq:amp}, from Bowditch Volume 2 page 6 \svolcite{2}[p. 6]{Bowditch}.
 \ref{eq:Z} and \ref{eq:Hc} from Bowditch Volume 2 page 235 \svolcite{2}[p 235]{Bowditch}.
 \ref{eq:MOO} is given in Ho 249\footcite{ho249}.
+
+\noindent Z Keystrokes: \keystroke{RCL}\keystroke{3}\keystroke{SIN}\keystroke{\textdiv}\keystroke{(}\keystroke{RCL}\keystroke{1}\keystroke{COS}\keystroke{\texttimes}\keystroke{RCL}\keystroke{2}\keystroke{TAN}\keystroke{\textminus}\keystroke{RCL}\keystroke{1}\keystroke{SIN}\keystroke{\texttimes}\keystroke{RCL}\keystroke{3}\keystroke{COS}\keystroke{)}\keystroke{=}\keystroke{2nd}\keystroke{TAN}\\
+\noindent Hc Keystrokes: \keystroke{RCL}\keystroke{1}\keystroke{COS}\keystroke{\texttimes}\keystroke{RCL}\keystroke{2}\keystroke{COS}\keystroke{\texttimes}\keystroke{RCL}\keystroke{3}\keystroke{COS}\keystroke{+}\keystroke{RCL}\keystroke{1}\keystroke{SIN}\keystroke{\texttimes}\keystroke{RCL}\keystroke{2}\keystroke{SIN}\keystroke{=}\keystroke{2nd}\keystroke{SIN}
 \section{Scheduling}
 \subsection{Sight Planning}
 A not inconsiderable part of your celestial Routine will consist of creating sight plans for you and your fellow cadets.
@@ -279,7 +283,7 @@ Find the DR Lat and Lon with the most recent POSN slip and the mid lat sailing, 
 \subsection{Fix}
 The Celestial Fix is the hardest thing you will have to do for this project, but it is very rewarding, and you can tell very quickly when something has gone wrong.
 If three lines of position are closely intersecting somewhere near the DR, you have most likely been successful.
-Effective sight planning is also crucial. Consider studying Bowditch's chapter on "Sight Planning".\pnotecite[vol 1, p. 308]{Bowditch}
+Effective sight planning is also crucial. Consider studying Bowditch's chapter on "Sight Planning".\pnotecite[vol 1, p. 308]{Bowditch}.
 Not to toot my own horn but you should also have a copy of my sight planning manual, which can be found in the bibliography of this document.
 
 \subsubsection*{Sun Fix}
@@ -323,6 +327,7 @@ Academically, you can take your 1200 RFIX and compare it to the Cadet Second Mat
 The most common source of error in a sun running fix is incorrect compensation for the vessel's motion, often from incorrect information regarding her course.
 Usually the most satisfactory information is in the 0800 POSN slip, regarding the 0800 DR information to plot from, the CSE and SPD of the ship, to be used for advancing and retarding your lines of position. You are free to do it graphically, but the sun running fix becomes a lot easier with the equation for \ref{eq:MOO}.
 \subsubsection*{Star Fix}
+Star identification is a common stumbling block for those beginning celestial.
 
 \subsubsection*{Advanced method for 3 star fix}
 Evening civil twilight begins at 1840 ship time, desire 1900 fix.
