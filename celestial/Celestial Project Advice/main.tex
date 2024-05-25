@@ -216,7 +216,29 @@ On the regular bearing circle (not the one with the telescope), the two flip up 
 Look through the metal cutout and through the loop, getting the string through the middle of the body.
 Once the body is sighted, look down a little at the mirror below the metal loop.
 There will be an indicator showing you the gyro azimuth of the body.
+
 For stars and planets, use the telescope attachment.
+The view in the telescope attachment has a vertical crosshair for centering on the star, and below that will be a mirror pointing down at the compass to show the star's bearing at that instant.
+It is difficult to manage the illumination of the compass card correctly so that the number can be seen at the same time as the star.
+The light must be dim enough to not destroy the observer's night vision, but bright enough to make out the number on the card in the little slot in the sight.
+
+The azimuth of the sun is the most frequently observed but the hardest to do or describe.
+The bearing circle has a mirror on it, and across the circle is a coin slot.
+The goal of the game is that you catch the reflection of the sun in the mirror and adjust the circle and the angle of the mirror so that the reflection goes into the coin slot, where another mirror shines the light from the sun down onto the compass card.
+Once you read the number illuminated by the sunlight, mark the time.
+
+There is a secret method for shooting bodies of medium brightness at altitude higher than 40\textdegree.
+Attached to the string side of the Gunsight, there is a piece of black reflective glass.
+Looking through the metal slot, catch the reflection of the object in the black mirror, and align this with the string.
+A reflection of the sun dimmed by the dark glass will not burn the eye.
+This reflection can be used to observe the Moon at a high elevation, or painfully bright stars.
+
+Taking an azimuth for the project is simpler and easier than taking an azimuth on the bridge.
+You are only required to find gyro error.
+This means you do not need to record the ship's heading at the same time that you take the gyro bearing, you do not need the local variation, you don't need the steering and checking information from the helmsman, and more tolerance is given to DR position.
+Simply observe the body of your choice and record the gyro bearing and the time.
+Find the DR Lat and Lon with the most recent POSN slip and the mid lat sailing, then use \ref{eq:Z} to get true bearing, and submit determine GE.
+Remember these rules:
 \subsection{Fix}
 \subsubsection*{Advanced method for 3 star fix}
 Evening civil twilight begins at 1840 ship time, desire 1900 fix.
@@ -242,7 +264,7 @@ The time burden is the same, but I felt cool.
 \subsubsection{Azimuth} \label{doubleget}
 \begin{figure}[htpb]
 	\centering
-	\includesvg[width=0.8\textwidth]{static/getgettvmdc.svg}
+	\includegraphics[width=0.8\textwidth]{static/getgettvmdc.png}
 	\caption{A common way to organize the calculations for calculating Gyrocompass Error, Variation and Deviation of the Standard Compass, as required for all watches.}
 	\label{fig:getget}
 \end{figure}
