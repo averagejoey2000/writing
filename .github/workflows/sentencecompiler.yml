@@ -22,7 +22,6 @@ jobs:
       with:
         root_file: law/significant/${{ matrix.chapter }}/template.tex
         latexmk_flags: -pdf
-
     - name: Rename and move PDFs
       run: |
         mkdir -p law
