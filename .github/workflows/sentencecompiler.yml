@@ -21,7 +21,7 @@ jobs:
       uses: xu-cheng/latex-action@v3
       with:
         root_file: law/significant/${{ matrix.chapter }}/template.tex
-        latexmk_flags: -pdf
+
     - name: Rename and move PDFs
       run: |
         mkdir -p law
@@ -36,4 +36,3 @@ jobs:
         git push
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
