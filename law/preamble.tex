@@ -1,0 +1,49 @@
+\documentclass{article}[12pt,letterpaper]
+\usepackage{graphicx} % Required for inserting images
+\usepackage{geometry}[margin=1in]
+\usepackage{ragged2e}
+\usepackage{titling}
+\usepackage{setspace}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref,csquotes}
+\usepackage{xpatch}
+%\usepackage{biblatex-mla}
+\usepackage[american]{babel}
+\usepackage[style=mla,autocite=footnote]{biblatex}
+\DeclareAutoCiteCommand{footnote}[f]{\footcite}{\footcites}
+\setlength{\bibhang}{1.5em}
+\makeatletter
+\DeclareCiteCommand{\fullcitefoot}
+  {\renewcommand{\finalnamedelim}
+   {\ifnum\value{liststop}>2 \finalandcomma\fi\addspace\&\space}%
+   \list{}
+   {\setlength{\leftmargin}{\bibhang}%
+     \setlength{\itemindent}{-\leftmargin}%
+     \setlength{\itemsep}{\bibitemsep}%
+     \setlength{\parsep}{\bibparsep}}\item}
+  {\usedriver
+    {\DeclareNameAlias{sortname}{default}}
+    {\thefield{entrytype}}\finentry}
+  {\item}
+  {\endlist\global\undef\bbx@lasthash}
+
+\DeclareCiteCommand{\fullcitebib}
+  {\renewcommand{\finalnamedelim}
+   {\ifnum\value{liststop}>2 \finalandcomma\fi\addspace\&\space}%
+   \list{}
+   {\setlength{\leftmargin}{\bibhang}%
+     \setlength{\itemindent}{-\leftmargin}%
+     \setlength{\itemsep}{\bibitemsep}%
+     \setlength{\parsep}{\bibparsep}}\item}
+  {\usedriver
+    {}
+    {\thefield{entrytype}}\finentry}
+  {\item}
+  {\endlist\global\undef\bbx@lasthash}
+\makeatother
+\addbibresource{law.bib}
+\doublespacing
+\title{Significant Sentence}
+\author{Joey Simone}
+
+\pagestyle{empty}
