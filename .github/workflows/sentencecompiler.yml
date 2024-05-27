@@ -1,0 +1,58 @@
+name: Compile LaTeX documents
+
+on:
+  push:
+    paths:
+      - 'law/significant/**.tex'
+
+jobs:
+  generate-matrix:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.set-matrix.outputs.matrix }}
+    steps:
+      - name: Generate matrix
+        id: set-matrix
+        run: |
+          chapters=$(seq -s, 1 20 | sed 's/,/,chap/g' | sed 's/^/chap/')
+          echo "::set-output name=matrix::{\"chapter\":[${chapters}]}"
+
+  build:
+    needs: generate-matrix
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix: ${{ fromJson(needs.generate-matrix.outputs.matrix) }}
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up LaTeX
+      uses: dante-ev/latex-action@v2.0.0
+
+    - name: Compile LaTeX document
+      run: |
+        cd law/significant/${{ matrix.chapter }}
+        latexmk -pdf -output-directory=../../compiled_${{ matrix.chapter }} template.tex
+
+    - name: Upload compiled PDFs
+      uses: actions/upload-artifact@v2
+      with:
+        name: ${{ matrix.chapter }}-pdf
+        path: law/compiled_${{ matrix.chapter }}/template.pdf
+        if-no-files-found: error
+
+    - name: Rename and move PDFs
+      run: |
+        mv law/compiled_${{ matrix.chapter }}/template.pdf law/${{ matrix.chapter }}.pdf
+
+    - name: Commit and push PDFs
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git add law/*.pdf
+        git commit -m 'Add compiled PDFs'
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
