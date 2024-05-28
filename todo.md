@@ -3,6 +3,7 @@
 [x] cleanup the capstone.  
 
 #Things I want to get done just in general  
+[ ] Rewrite my [resume](https://github.com/averagejoey2000/resume)
 [ ] Wean myself off powerpoint, try to get good conversions from the law and mp3 pptx's to beamer.  
 [ ] Move my work in the spoofing article from word into the APA style \LaTeX version
 [ ] Finish actually writing the spoofing paper.
