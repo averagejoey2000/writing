@@ -1,1 +1,4 @@
+law/COGSA[[:space:]]presentation[[:space:]]simone.pptx filter=lfs diff=lfs merge=lfs -text
+capstone/spoofing-presentation/Slide[[:space:]]Deck.pptx filter=lfs diff=lfs merge=lfs -text
+english/worldlitofthesea/Research[[:space:]]Presentation[[:space:]]Project[[:space:]]-[[:space:]]Joey[[:space:]]Simone/Slide[[:space:]]Deck.pptx filter=lfs diff=lfs merge=lfs -text
 *.pptx filter=lfs diff=lfs merge=lfs -text
