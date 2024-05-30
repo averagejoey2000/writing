@@ -7,6 +7,5 @@ You can find my resume [here](https://github.com/averagejoey2000/resume).
 
 This repository contains my writing assignments and other documents.
 
-## Resume
 
 
