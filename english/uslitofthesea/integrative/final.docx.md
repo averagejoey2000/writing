@@ -1,0 +1,191 @@
+Synthesis of Themes: Agency in Art
+
+Across eras, perspective as a tool for the author is their main tool to
+force the reader into certain patterns of thought, and to identify with
+certain characters. Moby Dick, Turnabout, and Metal Gear Solid 2 each in
+different ways use the aspects of their medium to convey a story about
+perspective, and shape a story about how this perspective effects the
+characters and the audience. The ways in which they use perspective are
+characteristic of their artistic periods, but all convey a broader
+message about choice and information.
+
+Moby Dick is a product of the Romanticism movement in art. From the
+first words, the reader is made aware that this is an inner experience,
+and that Ishmael is telling you a story about himself. He will paint you
+beautiful pictures of what happened to him and his friends, but the
+story takes place, in most chapters, inside of his head. The subject
+matter of the story is the whale, but the essence of the book is to
+relate to the reader. Ishmael is an unusual blend of character and
+narrator, we have only him to trust about the events of the book, but he
+also has access to information it would be entirely unreasonable and
+unrealistic for him to have, for the purpose of dramatic content. By
+showing private conversations between Starbuck and Ahab, or the internal
+monologues of the same men, Ishmael provides context, and in a way
+censors alternative interpretations and explanations of what happened
+aboard the Pequod on her final voyage. These make way for his delivery
+of various sermons on the importance of whaling to modern society,
+speculations on the characteristics of cetaceans, and to judge the
+reader to their face. "Whaling not respectable?" This represents our
+pre-modern representation of how to tie agency into the medium. We have
+no choice but to sit and listen to him talk about how "Whales are fish
+because 1. They Swim in the Water" because Ishmael controls the speed at
+which he tells us the main story of the book, providing we don't skip to
+the end or read the CliffsNotes. An interesting case exists in "The Town
+Ho Story", as a story he tells us about a time he told a story to people
+we don't know, and he learned that story from someone else who didn't
+want to tell him about it, and it becomes relevant to the action of the
+story as an -independent- report of the power of Moby Dick. It forces us
+out of our immersion into the events of the story and cements our
+perspective as readers of Ishmael's book, all to distract us from the
+perspective that we are the readers of Melville's book. Chapters like
+these and The Affidavit serve as impassioned pleas by Ishmael for us to
+take as Gospel Truth a story from the fiction shelf, and in return he'll
+tell you about how the carpenter complained about making a coffin for
+his boyfriend into a lifebuoy.
+
+At a number of points, Ishmael ascribes the actions of various actors in
+the play as being subservient to fate, including himself. He was fated
+to go whaling, he was fated to choose the Pequod, Queequeg's tattoos
+foretold the confrontation with the whale, fate stayed the hand of
+Starbuck when he held the musket, and fate compelled Ahab to tangle with
+Moby Dick for the last time, even when in the symphony he saw that ever
+so human reflection of pain and hope in Starbuck's eye. The thread of
+Fedallah's prophecy is a specter which looms over Ahab, he only tells
+any of his crew about it once it becomes too late for them to be saved,
+and he of course fatally misinterprets it. Furthermore, that this comes
+in a book, and all the events are long passed. There is no suspense for
+Ishmael, and he has on a number of pages mentioned the deaths of certain
+characters before they actually happened. Search for the epitaph of
+Bulkington or the reference to Queequeg's last dive. This comes in the
+face of the romantic ideas of hero worship and self-determination. No
+matter how much can be ascribed to the strength of Ahab and his
+legendary status, he was no match for the whale, and it destroyed
+everybody. As discussed in class, a complete reputation of the
+one-great-man, and of his agency.
+
+Turnabout is, as the name implies, a straight shot and a sharp turn,
+repeatedly. We are introduced to each of the characters in a way
+matching the stereotype we might have for each man, the grizzled
+American bomber pilot, the cocksure but prim lieutenant, the drunk
+effeminate English navy twink. Faulkner allows us to let sit those
+pre-conceptions in our minds in the time leading up to the air mission,
+only giving slight clues to the cleverness of Mr. Hope. In the modern
+style, the descriptions of the actions and set pieces are tight and
+visual, with a keen sense of location, and little embellishment. A story
+about picking up a tiny drunk boy takes a sharp turn when they take him
+on an air raid, and shows his competency with an airframe mounted
+machine gun, and some fine orienteering skills within seconds of
+entering the plane's gunner position in the nose. Perspective is called
+attention to in the story when our hero the captain disregards what Hope
+said about the bomb which failed to release properly, despite him having
+the vantage point to see the bomb itself hanging off the wing. The
+captain's self-image as a competent and daring officer is challenged
+when he enters Hope's element and embarks on the voyage in the bomb
+torpedo boat on what to all the world seems like a suicide mission. Less
+colorful language is used to illustrate that he is out of his depth, but
+to have him fumble to unjam the torpedo and throw up trying. In a
+previous class session, I remarked that every named character in
+Turnabout is a soldier, and in a time when the draft was active, WWI,
+desertion is punishable by death. In this way, none of the characters
+have any true choice in what they are permitted to do, they are forced
+by their country to fight as soldier slaves. Their agency is taken away
+by their positions, and their degrees of freedom are shown by their
+uniforms. We are introduced to the American captain by showing his
+uniform as being ever so slightly out of regulations, and he is the one
+who at the end of the short story is shown having the treasonous thought
+to destroy all the world's generals, presidents, kings, and diplomats
+who have forced this life of death upon him, who sent Hope on a long
+range torpedo boat patrol from which he never returned. Modernism itself
+comes during the time of confusion coming from the fall of Empires
+surrounding the first and second world wars, and artists became more
+experimental in their styles, as shown with Faulkner's fast and loose
+dialogue and pacing. This is our Modern pillar, no longer forcing the
+inner perspective of feelings of the author, but of the characters, and
+allowing the reader to empathize or not with any of these warfighters.
+
+The hardest part of this essay to write is the postmodern entry, Metal
+Gear Solid 2, often touted as the first or most postmodern videogame. As
+an interactive medium, the concept of canon is malleable, there are no
+concrete answers to "how many times was the main character spotted? How
+many guards did they kill?" and other comparable questions as to how the
+player behaved in the simulation. As a sequel to an acclaimed action
+game, players already have an idea of what to expect, and have their own
+goals in mind for their experience of the game. Kojima, the auteur of
+MGS2, revels in taking this away from the player. In the previous game,
+the player, the audience, plays as a badass secret agent named Solid
+Snake, who infiltrates a nuclear compound in Alaska which has been taken
+over by terrorists. Most people who purchase the sequel would again
+expect to be permitted to indulge in the fantasy of being that same
+fantastical action hero, but MGS2 rips away not only the opportunity to
+repeat their experience, but also the satisfaction they had of doing it
+the first time. In the first act, the player does get to play as Snake,
+but in the second act, they are forced to play as Raiden, a man who was
+trained on simulations of the first game, and who himself admires snake.
+This change in perspective holds up a mirror to the player. "You are not
+a badass secret agent. You played him in a videogame, this guy played
+him in a videogame, you are this guy. You are not Snake, you are Raiden"
+and this sharing is meant to be incredibly uncomfortable for both the
+player and for Raiden. The player is told to put their name on Raiden's
+dog tags at a computer, to carve in iron that they are one. This is the
+opposite of a "Call me Ishmael" moment. Instead of Ishmael telling us
+who he is and making us feel his feelings and read his diary, we are
+forced to live with Raiden's thoughts, and he is our puppet.
+
+In the same chapter of the second act, the player is required to use the
+first person mode in the game in a way that was not done in the previous
+game, putting them into Raiden's headspace in a literal way in addition
+to a figurative way, This is the first 20 chapters of Moby Dick.
+Everyone who purchased a book called "The Whale" expecting an action
+adventure got to sit through a monologuing unskilled sailor talking
+about how handsome his husband is for a fifth of the book before we even
+see Ahab, the badass onto whom John Doe projects himself. After the
+halfway point through the game, the character of Solid Snake from the
+previous game is fighting alongside Raiden, driving home the fact that
+"you are not him. There he is, next to you, you are not James Bond, you
+are not John Rambo, you are not Solid Snake. That's him and you're not
+him\" the game all but screams at you.
+
+In a series of monologues delivered by government agents and a rogue AI,
+it is revealed to the player via Raiden that the shadow government
+controls messaging in mass media and the internet by pruning what it
+qualifies as misinformation, creating signal noise ("creating context
+not destroying content" by the AI's own words), and controlling behavior
+on the society scale through memes. They also control behavior on the
+micro scale by creating certain pressures in an individual person's
+scenario. The player's character, Raiden, was given a mission in this
+game similar to the events of the first game, and they (the shadow
+government) hoped that the similarities between the missions would shape
+Raiden to be a supersoldier like snake, but one that they controlled
+implicitly for their own ends. They control the game in a meta sense by
+exploiting a Metal Gear Solid fan's inclination to try to be Solid
+Snake, so the pressure also effects the person holding the controller.
+About at this time, the game pulls some uniquely Kojima tricks like
+creating a fake game over screen, pretending to switch the inputs,
+taking control of the character away from the player unless they change
+what port the controller is plugged into, reading the player's memory
+card, or giving Raiden a message over the in game radio telling him to
+turn off the console.[^1] It is revealed that the last chapter of the
+game has been taking place in the belly of a mechanical whale, or what
+is called the sigmoid colon of Arsenal Gear, a submersible base housing
+autonomous weapons of mass destruction controlled by the shadow
+government robots. Raiden crashes the whale/base/ship into New York
+(where Ishmael is from). In a subversion of Captain Bogart's treasonous
+secret thought of blowing up the kings, presidents, and generals, the AI
+coerces Raiden into killing the President of the United States. The game
+has a post credits sequence, where Raiden decides to be his own man, and
+throws away the dog tags bearing the player's name, severing the
+connection between them, and ending the game.
+
+Each work of art, in their unique mediums; the first great American
+novel, a short story that wouldn't be out of place as a Tarantino flick,
+and a videogame which is designed from the ground up to invade the
+audience's mind in the most disturbing way possible; use their formats
+to convey a story about agency, about choice, about heroes and hero
+worship in the face of fate, government, and unseen forces which control
+your very mind and body.[^2]
+
+[^1]: Watch these <https://www.youtube.com/watch?v=eKl6WjfDqYA>
+    https://www.youtube.com/watch?v=z86oAKXUKxo
+
+[^2]: If you have 6 hours, watch this
+    https://www.youtube.com/watch?v=I5AunfmI8bs
