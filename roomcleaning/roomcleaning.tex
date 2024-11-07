@@ -1,52 +1,85 @@
 \documentclass{article}
+\usepackage{cellspace, tabularx}
+%\usepackage{multicol}
+\usepackage{setspace}
 \usepackage{graphicx}
 \usepackage[margin=1in]{geometry}
 \usepackage{enumitem,amssymb}
 \usepackage{tabto,ulem,booktabs}
 \usepackage{textcomp}
+\singlespacing
 \newlist{todolist}{itemize}{2}
 \setlist[todolist]{label=$\square$}
 \begin{document}
-\emph{Placeholder: Ship Pic}
-
-USNS Leroy Grumman, TAO 195\\ Room Cleaning Procedure
-
+Letterhead
+\begin{center} Room Cleaning Checksheet \end{center}
+\begin{tabularx}{\textwidth}{XXX}
+\textbf{Room:} &&\textbf{Date:}
+\end{tabularx}
+\par\noindent\rule{\textwidth}{0.4pt}
+\bigskip
 \begin{itemize}
-\item Materials:
+\item \textbf{Materials:}
 \begin{itemize}
 \item Bucket
 \item Gloves
 \item Rags
 \item Household Sponge
-\item Multipurpose Cleaning Spray
-\item Window Cleaner
-\item Bleach \textit{\underline{\textbf{Do not use in Toilet. Shower and Sink Only!}}}
-\item Toilet Bowl Cleaner
+\item Multipurpose Cleaning Spray (Spray Nine)
+\item Bathroom Cleaner (Revive)
+\item Window Cleaner 
+\item Bleach, \textit{\underline{\textbf{Do not use in Toilet.}}}
+\item Toilet Bowl Cleaner Liquid
 \item Vacuum
 \item Foxtail and Dustpan
 \item Feather Duster
 \item Garbage Bags
+\item Scotch Brite
 \end{itemize}
-\item Procedure
-\begin{itemize}
+%\end{multicols*}
+\item \textbf{Procedure}
   \begin{todolist}
-  \item Ceiling
+  \item Overheads
   \begin{todolist}
-\item Dust Ceiling
 \item Clean Lights
 \item Dust Vent
 \end{todolist}
   \item Desk
-  \item Cabinet
-  \item Bed
-  \item Bathroom
-  \item Walls
-  \item Floor
+  \begin{todolist}
+  \item  Remove all items from drawers.
+  \item  Wipe All Surfaces with Multipurpose Cleaner Spray and Rag
+  \item  Disconnect All Electronic Equipment Except Telephone
   \end{todolist}
-\end{itemize}
+  \item Cabinet
+  \begin{todolist}
+  \item  Remove all items from drawers.
+  \item  Wipe All Surfaces with Multipurpose Cleaner Spray and Rag
+  \end{todolist}
+  \item Defrost and Clean Fridge
+  \item Dress Bed with Sheets and Pillows if available
+  \item Bathroom
+  \begin{todolist}
+  \item Scrub Toilet Bowl with bowl brush and Vacuum Toilet Bowl Cleaner.
+  \item Wipe toilet surfaces with Multipurpose Spray.
+  \item Clean shower floor with bleach, scrub with abrasive.
+  \item Clear any hair from drains.
+  \item Clean Sink with sponge and Revive
+  \item Empty Medicine Cabinet.
+  \item Wipe Medicine Cabinet Door Mirror with Glass Cleaner and Rag.
+  \end{todolist}
+  \item Bulkheads
+  \begin{todolist}
+  \item Wipe Mirrors and Window with Glass Cleaner and Rag.
+  \item Wipe walls with Multipurpose Spray and Rag.
+  \end{todolist}
+  \item Floor
+  \begin{todolist}
+  \item Remove all garbage from room.
+  \item Vacuum carpet.
+  \end{todolist}
+  \end{todolist}
+  \end{itemize}
 
-
-\end{itemize}
 
 Cleaned By: \hrulefill
 
