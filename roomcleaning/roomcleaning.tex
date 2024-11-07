@@ -1,5 +1,13 @@
 \documentclass{article}
+\usepackage[margin=1in]{geometry}
 \usepackage{enumitem,amssymb}
+\usepackage{tabto,ulem,booktabs}
+\usepackage{textcomp}
+\TabPositions{.38\linewidth,.5\linewidth}
+\def\dotsign{\xleaders\hbox to .2em{\d{}}\hfill\d{}}
+\def\dashsign{\xleaders\hbox to .5em{\_}\hfill\_}
+\def\dummytext{\bigskip\dotfill and this text is the very
+inconclusive end of the very long report.\par~\par}
 \newlist{todolist}{itemize}{2}
 \setlist[todolist]{label=$\square$}
 \begin{document}
@@ -37,4 +45,14 @@ USNS Leroy Grumman, TAO 195\\ Room Cleaning Procedure
   \end{todolist}
 
 \end{itemize}
+
+Cleaned By: \hrulefill
+
+\hspace*{0mm}\phantom{Approved: }Supply Utilityman
+
+\bigskip
+Approved: \hrulefill
+
+\hspace*{0mm}\phantom{Approved: }Ship's Officer
+
 \end{document}
