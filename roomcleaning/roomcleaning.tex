@@ -1,4 +1,7 @@
-\documentclass{article}
+\documentclass[letterpaper,11pt]{article}
+\usepackage{adjustbox}
+\usepackage{wrapfig}
+% \usepackage{fancyhdr}
 \usepackage{cellspace, tabularx}
 %\usepackage{multicol}
 \usepackage{setspace}
@@ -11,12 +14,19 @@
 \newlist{todolist}{itemize}{2}
 \setlist[todolist]{label=$\square$}
 \begin{document}
-Letterhead
+\begin{minipage}{0.2\textwidth}
+  \adjustbox{valign=t}{\includegraphics[width=1in]{donlogo.png} }
+\end{minipage}
+\hspace*{2cm}
+\begin{minipage}{0.7\textwidth}
+ {\Large \textbf{USNS Leroy Grumman, T-AO 195}}
+\end{minipage}
+\bigskip
 \begin{center} Room Cleaning Checksheet \end{center}
 \begin{tabularx}{\textwidth}{XXX}
 \textbf{Room:} &&\textbf{Date:}
 \end{tabularx}
-\par\noindent\rule{\textwidth}{0.4pt}
+% \par\noindent\rule{\textwidth}{0.4pt}
 \bigskip
 \begin{itemize}
 \item \textbf{Materials:}
